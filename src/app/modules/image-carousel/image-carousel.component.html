@@ -1,0 +1,19 @@
+<div class="relative flex items-start w-full overflow-hidden border border-black rounded-md group aspect-video">
+  @for (image of images; track $index) {
+    <img src="{{ image }}" alt="project image" class="w-full min-h-full transition-transform duration-1000" [ngStyle]="{ transform: 'translateX(' + -active_image * 100 + '%)' }" />
+  }
+
+  <div (click)="prevImage()" class="absolute left-3 top-[40%] flex h-[20%] items-center justify-center rounded-sm border border-black bg-black bg-opacity-50 px-1.5 py-2 text-lg text-white outline outline-1 outline-[#ffffff80] [transition:color_0.15s,background-color_0.15s] hover:cursor-pointer hover:bg-stone-800">
+    <i class="fa-solid fa-chevron-left"></i>
+  </div>
+
+  <div (click)="nextImage()" class="absolute right-3 top-[40%] flex h-[20%] items-center justify-center rounded-sm border border-black bg-black bg-opacity-50 px-1.5 py-2 text-lg text-white outline outline-1 outline-[#ffffff80] [transition:color_0.15s,background-color_0.15s] hover:cursor-pointer hover:bg-stone-800">
+    <i class="fa-solid fa-chevron-right"></i>
+  </div>
+
+  <div class="absolute flex justify-center w-full gap-2 bottom-3">
+    @for (image of images; track $index) {
+      <div (click)="showImage($index)" class="h-2 w-10 transition-colors duration-1000 rounded-sm border border-black bg-black bg-opacity-50 outline outline-1 outline-[#ffffff80] hover:cursor-pointer" [ngClass]="{ '!bg-[#ff5722]': $index == active_image, 'bg-opacity-100': $index == active_image }"></div>
+    }
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="relative w-full pb-[12vh] overflow-hidden">
+  <div class="flex h-full min-h-72 w-full flex-col items-center justify-center border-b border-[#717171] bg-[#212529] bg-[radial-gradient(circle,rgba(0,0,0,0.1)_0,rgba(0,0,0,0.5)_100%)] bg-no-repeat p-8 max-sm:p-4 text-[#ff5722]">
+    <h1 class="mb-0 font-bona text-7xl max-sm:text-5xl">Projects</h1>
+  </div>
+
+  <div class="flex flex-col items-center p-8 max-sm:p-4">
+    <div class="absolute -left-[25vw] -z-10 flex h-[150%] w-[200vw] items-center justify-center">
+      <svg width="150%" height="150%" xmlns="http://www.w3.org/2000/svg" class="-rotate-6">
+        <defs>
+          <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+            <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#717171" stroke-width="1" />
+          </pattern>
+        </defs>
+
+        <rect width="150%" height="150%" fill="url(#grid)" />
+      </svg>
+    </div>
+
+    <div class="flex max-w-[80rem] max-sm:max-w-full flex-col gap-8">
+      @for (project_data of projects_data; track $index) {
+        @if (!project_data.hidden) {
+          <app-project [project]="project_data" [id]="$index"></app-project>
+        }
+      }
+    </div>
+  </div>
+</div>

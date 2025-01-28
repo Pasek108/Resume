@@ -1,0 +1,88 @@
+<header class="flex h-20 w-full justify-center overflow-hidden border-b border-[#717171] bg-[] bg-no-repeat px-8 py-4 max-sm:p-4" (mousemove)="updateBackground($event)" style="background: radial-gradient(circle at 0, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.5) 100%) #212529">
+  <div class="flex items-center justify-between w-full max-w-screen-xl gap-16">
+    <div class="-mt-[5px] flex flex-col" #logo>
+      <div class="text-3xl font-bold text-[#ff5722]">Artur Pas</div>
+      <div class="-mt-1 text-sm">Web developer</div>
+    </div>
+
+    <nav class="flex items-center justify-end gap-8 font-bold uppercase cursor-pointer">
+      <a routerLink="about" routerLinkActive="active" class="group px-1 transition duration-300 [&.active_div]:max-w-full">
+        About
+        <div class="h-0.5 max-w-0 bg-[#ff5722] transition-all duration-500 group-hover:max-w-full"></div>
+      </a>
+
+      <a routerLink="projects" routerLinkActive="active" class="group px-1 transition duration-300 [&.active_div]:max-w-full">
+        Projects
+        <div class="h-0.5 max-w-0 bg-[#ff5722] transition-all duration-500 group-hover:max-w-full"></div>
+      </a>
+
+      <a routerLink="contact" routerLinkActive="active" class="group px-1 transition duration-300 [&.active_div]:max-w-full">
+        Contact
+        <div class="h-0.5 max-w-0 bg-[#ff5722] transition-all duration-500 group-hover:max-w-full"></div>
+      </a>
+    </nav>
+  </div>
+
+  <!--<div class="fixed inset-0 transition duration-300 pointer-events-none -z-10 lg:absolute" [ngStyle]="{'background': 'radial-gradient(400px at ' + bg_x + 'px ' + bg_y + 'px, rgba(29, 78, 216, 0.15), transparent 80%)'}"></div>
+
+  <div class="absolute -z-10 -top-[150%] -left-10 w-[120%] h-[500%]">
+    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" class="-rotate-6">
+      <defs>
+        <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+          <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1"/>
+        </pattern>
+      </defs>
+
+      <rect width="100%" height="100%" fill="url(#grid)" />
+    </svg>
+  </div>-->
+</header>
+
+<main class="h-[calc(100vh-5rem)] w-full overflow-y-auto">
+  <router-outlet></router-outlet>
+
+  <footer class="relative flex w-full flex-col items-center justify-center gap-12 bg-[#111315]">
+    <div class="left-100% absolute -top-[29.75vh] -z-10 flex h-[30vh] w-full items-end justify-start">
+      <svg class="w-full bg-transparent" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <path d="M-80 79C-10 79 218.416 23.165 693.5 23.165C1168.58 23.165 1487 79 1487 79H-100Z" fill="#111315" stroke="#717171"></path>
+      </svg>
+    </div>
+
+    <div class="w-[40rem] max-w-full px-8 pt-8 max-lg:pt-16 max-sm:px-4">
+      <section class="mx-5">
+        <blockquote class="relative w-full p-10 m-1 text-center text-white">
+          We all die. The goal isn't to live forever, the goal is to create something that will.<br />
+          <cite> - Chuck Palahniuk</cite>
+        </blockquote>
+      </section>
+    </div>
+
+    <div class="-mb-8 text-xl font-bold">Contact me</div>
+    <div class="flex gap-4 px-8 text-2xl text-gray-100 max-sm:px-4">
+      <div class="flex aspect-square w-12 cursor-pointer items-center justify-center rounded-full border border-gray-100 transition-colors duration-300 hover:bg-gray-100 hover:text-[#111315]">
+        <i class="fa-brands fa-github"></i>
+      </div>
+
+      <div class="flex aspect-square w-12 cursor-pointer items-center justify-center rounded-full border border-gray-100 transition-colors duration-300 hover:bg-gray-100 hover:text-[#111315]">
+        <i class="fa-brands fa-codepen"></i>
+      </div>
+
+      <div class="flex aspect-square w-12 cursor-pointer items-center justify-center rounded-full border border-gray-100 transition-colors duration-300 hover:bg-gray-100 hover:text-[#111315]">
+        <svg class="h-7" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><defs><style>.a{fill:#f3f4f6;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="a" d="M20.7143,30.3722c0-3.2261-6.3709-3.6715-6.3709-11.7725S18.8446,9.6954,18.8446,6.55,6.38,7.23,6.38,19.2922,20.7143,33.5983,20.7143,30.3722Z"/><path class="a" d="M30.3042,27.2168c-3.2261,0-3.6715,6.371-11.7724,6.371S9.6274,29.0865,6.4823,29.0865s.68,12.465,12.742,12.465S33.53,27.2168,30.3042,27.2168Z"/><path class="a" d="M17.6958,20.8178c3.2261,0,3.6714-6.371,11.7724-6.371s8.9044,4.5013,12.0495,4.5013-.68-12.465-12.742-12.465S14.47,20.8178,17.6958,20.8178Z"/><path class="a" d="M27.2864,17.6278c0,3.2261,6.371,3.6715,6.371,11.7725s-4.5012,8.9043-4.5012,12.05,12.465-.68,12.465-12.742S27.2864,14.4017,27.2864,17.6278Z"/></svg>
+      </div>
+
+      <div class="flex aspect-square w-12 cursor-pointer items-center justify-center rounded-full border border-gray-100 transition-colors duration-300 hover:bg-gray-100 hover:text-[#111315]">
+        <svg class="h-6" fill="#f3f4f6" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><path d="M12.17 1.272a.732.732 0 0 0-.718.732v13.914a.732.732 0 0 0 .732.732.732.732 0 0 0 .732-.732V2.004a.732.732 0 0 0-.745-.732zM23.246 5.44a.734.734 0 0 0-.277.063l-6.282 2.804a.733.733 0 0 0 0 1.336l6.282 2.813a.738.738 0 0 0 .3.065.732.732 0 0 0 .297-1.4L18.78 8.976l4.786-2.137a.734.734 0 0 0 .37-.966.734.734 0 0 0-.69-.433zm-22.5 5.032a.732.732 0 0 0-.722.915c1.736 6.677 7.775 11.341 14.683 11.341a.732.732 0 0 0 0-1.464A13.706 13.706 0 0 1 1.44 11.02a.732.732 0 0 0-.694-.547z"/></svg>
+      </div>
+
+      <div class="flex aspect-square w-12 cursor-pointer items-center justify-center rounded-full border border-gray-100 transition-colors duration-300 hover:bg-gray-100 hover:text-[#111315]">
+        <i class="fa-brands fa-github"></i>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center w-full gap-1 px-4 py-3 text-sm bg-black max-sm:flex-col-reverse">
+      <div>© Copyright 2025.</div>
+      <div>Designed & Developed by 🦍 Artur Pas</div>
+    </div>
+  </footer>
+</main>

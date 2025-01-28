@@ -1,0 +1,29 @@
+<div class="flex flex-row gap-8 py-3 max-lg:!flex-col" [class.flex-row-reverse]="id % 2">
+  <div class="flex justify-center items-center h-fit aspect-video w-2/5 max-w-full flex-grow shadow-[0px_1rem_3rem_0px_#4a474780] shadow-black max-lg:w-full sm:min-w-80">
+    <app-image-carousel [images]="project.images" class="w-full"></app-image-carousel>
+  </div>
+
+  <div class="flex flex-col justify-center flex-grow w-2/5 gap-4 max-lg:w-full">
+    <div class="">
+      <h2 class="mb-1 text-4xl font-bold max-sm:text-3xl">{{ project.name }}</h2>
+      <div class=""><span class="font-bold">Group:</span> {{ project.group }}</div>
+    </div>
+
+    <div class="my-2">
+      <p>{{ project.description }}</p>
+
+      <div class="flex flex-row flex-wrap gap-2 mt-3 text-xs">
+        @for (skill of project.skills; track $index) {
+          <div class="flex items-center justify-center p-1 px-3 font-bold uppercase rounded-md bg-slate-600 text-slate-100">
+            {{ skill }}
+          </div>
+        }
+      </div>
+    </div>
+
+    <div class="flex gap-2">
+      <a href="{{ project.live_version }}" target="_blank" class="flex items-center justify-center gap-2 p-2 px-4 font-bold text-white bg-blue-800 border border-black rounded-lg cursor-pointer hover:bg-blue-900"><i class="fa-solid fa-up-right-from-square"></i> Live version</a>
+      <a href="{{ project.github_repo }}" target="_blank" class="flex items-center justify-center gap-2 p-2 px-4 font-bold text-black bg-white border border-black rounded-lg cursor-pointer hover:bg-gray-200"><i class="-my-1 text-xl fa-brands fa-github"></i> GitHub</a>
+    </div>
+  </div>
+</div>
