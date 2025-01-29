@@ -1,6 +1,8 @@
 <div class="relative flex items-start w-full overflow-hidden border border-black rounded-md group aspect-video">
-  @for (image of images; track $index) {
-    <img src="{{ image }}" alt="project image" class="w-full min-h-full transition-transform duration-1000" [ngStyle]="{ transform: 'translateX(' + -active_image * 100 + '%)' }" />
+  <img ngSrc="{{ images[0] }}" width="356" height="200" alt="project image" class="w-full min-h-full transition-transform duration-1000" [ngStyle]="{ transform: 'translateX(' + -active_image * 100 + '%)' }" priority/>
+
+  @for (image of images | slice:1; track $index) {
+    <img ngSrc="{{ image }}" width="356" height="200" alt="project image" class="w-full min-h-full transition-transform duration-1000" [ngStyle]="{ transform: 'translateX(' + -active_image * 100 + '%)' }" />
   }
 
   <div (click)="prevImage()" class="absolute left-3 top-[40%] flex h-[20%] items-center justify-center rounded-sm border border-black bg-black bg-opacity-50 px-1.5 py-2 text-lg text-white outline outline-1 outline-[#ffffff80] [transition:color_0.15s,background-color_0.15s] hover:cursor-pointer hover:bg-stone-800">

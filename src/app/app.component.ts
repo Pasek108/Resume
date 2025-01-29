@@ -1,10 +1,9 @@
-import { NgStyle } from '@angular/common';
 import { AfterContentInit, AfterViewChecked, AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterModule, NgStyle],
+  imports: [RouterOutlet, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

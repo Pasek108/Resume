@@ -4,31 +4,101 @@
   </div>
 
   <div class="flex flex-col items-center p-8 max-sm:p-4">
-    <div class="flex items-start justify-between w-full h-full max-w-screen-xl gap-16 py-8">
-      <div class="flex-grow w-2/5 h-full">
+    <div class="flex flex-wrap items-start justify-between w-full h-full max-w-screen-xl gap-16 py-8">
+      <div class="flex-grow w-2/5 h-full max-lg:w-full">
         <div class="text-3xl font-bold">
           Get In Touch
           <div class="my-3 h-1 w-20 bg-[#ff5722]"></div>
         </div>
-        <p>I prefer contact through discord, email or linkedin</p>
 
-        <div class="flex flex-col gap-4 text-lg">
-          <a href="mailto:artur.pas@proton.me?subject=Befunge93Interpreter%20-%20Contact&body=Nice%20project.%20have%20a%20nice%20day."><i class="fa-solid fa-envelope"></i> artur.pas&#64;proton.me</a>
+        <p class="">Have a project in mind or just want to say hello? I'm open to new opportunities, collaborations, or a friendly chat about tech. Feel free to contact me through:</p>
 
-          <span><i class="fa-brands fa-discord"></i> arturpas</span>
+        <div class="flex flex-col gap-2 my-4">
+          <div class="flex items-center">
+            <a class="hover:text-[#ff5722] hover:underline" href="mailto:artur.pas@proton.me">
+              <i class="inline-flex items-center justify-center w-6 text-lg fa-solid fa-envelope"></i>
+              <span class="ml-2 font-bold">Email:</span>
+              artur.pas&#64;proton.me
+            </a>
+          </div>
 
-          <a href="https://maps.app.goo.gl/W6kWWKjGn4EQKEQU6" target="_blank"><i class="inline-flex items-center justify-center w-6 text-xl fa-solid fa-location-dot"></i> Poland, Rzeszów</a>
+          <div class="flex items-center">
+            <a class="hover:text-[#ff5722] hover:underline" href="https://www.linkedin.com/in/artur-pas/" target="_blank">
+              <i class="inline-flex items-center justify-center w-6 text-lg fa-brands fa-linkedin"></i>
+              <span class="ml-2 font-bold">LinkedIn:</span>
+              artur-pas
+            </a>
+          </div>
 
-          <a href="https://pasek108.github.io/Resume/" target="_blank"><i class="inline-flex items-center justify-center w-6 text-xl fa-solid fa-briefcase"></i> Portfolio</a>
+          <div class="flex items-center">
+            <a class="hover:text-[#ff5722] hover:underline" href="https://www.reddit.com/user/Artur_Pas/" target="_blank">
+              <i class="inline-flex items-center justify-center w-6 text-lg fa-brands fa-reddit-alien"></i>
+              <span class="ml-2 font-bold">Reddit:</span>
+              Artur_Pas
+            </a>
+          </div>
 
-          <a href="https://github.com/Pasek108" target="_blank"><i class="inline-flex items-center justify-center w-6 text-xl fa-brands fa-github"></i> Pasek108</a>
+          <div class="flex items-center">
+            <a class="hover:text-[#ff5722] hover:underline" href="https://discord.gg/NCGtXBC2uB" target="_blank">
+              <i class="inline-flex items-center justify-center w-6 text-lg fa-brands fa-discord"></i>
+              <span class="ml-2 font-bold">Discord:</span>
+              arturpas</a
+            >
+          </div>
 
-          <a href="https://www.linkedin.com/in/artur-pas/" target="_blank"> <i class="inline-flex items-center justify-center w-6 text-xl fa-brands fa-linkedin"></i> Artur Pas</a>
+          <div class="flex items-center">
+            <a class="hover:cursor-pointer hover:text-[#ff5722] hover:underline" (click)="scrollToContactForm()">
+              <i class="inline-flex items-center justify-center w-6 text-lg fa-solid fa-list-check"></i>
+              <span class="ml-2 font-bold">Contact form</span>
+            </a>
+          </div>
+        </div>
+
+        <p class="mb-4">Send me a message, and I’ll respond as soon as possible! 🚀</p>
+
+        <div class="my-2 text-2xl font-bold">Check out my work</div>
+
+        <div class="flex gap-4 px-8 text-2xl text-gray-100 max-sm:px-4">
+          <a href="mailto:artur.pas@proton.me">
+            <div class="flex aspect-square w-12 cursor-pointer items-center justify-center rounded-full border border-gray-100 transition-colors duration-300 hover:bg-gray-100 hover:text-[#111315]">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/artur-pas/" target="_blank">
+            <div class="flex aspect-square w-12 cursor-pointer items-center justify-center rounded-full border border-gray-100 transition-colors duration-300 hover:bg-gray-100 hover:text-[#111315]">
+              <i class="fa-brands fa-linkedin"></i>
+              <!-- <svg class="h-7" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><defs><style>.a{fill:#f3f4f6;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="a" d="M20.7143,30.3722c0-3.2261-6.3709-3.6715-6.3709-11.7725S18.8446,9.6954,18.8446,6.55,6.38,7.23,6.38,19.2922,20.7143,33.5983,20.7143,30.3722Z"/><path class="a" d="M30.3042,27.2168c-3.2261,0-3.6715,6.371-11.7724,6.371S9.6274,29.0865,6.4823,29.0865s.68,12.465,12.742,12.465S33.53,27.2168,30.3042,27.2168Z"/><path class="a" d="M17.6958,20.8178c3.2261,0,3.6714-6.371,11.7724-6.371s8.9044,4.5013,12.0495,4.5013-.68-12.465-12.742-12.465S14.47,20.8178,17.6958,20.8178Z"/><path class="a" d="M27.2864,17.6278c0,3.2261,6.371,3.6715,6.371,11.7725s-4.5012,8.9043-4.5012,12.05,12.465-.68,12.465-12.742S27.2864,14.4017,27.2864,17.6278Z"/></svg> -->
+            </div>
+          </a>
+
+          <a href="https://www.reddit.com/user/Artur_Pas/" target="_blank">
+            <div class="flex aspect-square w-12 cursor-pointer items-center justify-center rounded-full border border-gray-100 transition-colors duration-300 hover:bg-gray-100 hover:text-[#111315]">
+              <i class="fa-brands fa-reddit-alien"></i>
+              <!-- <svg class="h-6" fill="#f3f4f6" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><path d="M12.17 1.272a.732.732 0 0 0-.718.732v13.914a.732.732 0 0 0 .732.732.732.732 0 0 0 .732-.732V2.004a.732.732 0 0 0-.745-.732zM23.246 5.44a.734.734 0 0 0-.277.063l-6.282 2.804a.733.733 0 0 0 0 1.336l6.282 2.813a.738.738 0 0 0 .3.065.732.732 0 0 0 .297-1.4L18.78 8.976l4.786-2.137a.734.734 0 0 0 .37-.966.734.734 0 0 0-.69-.433zm-22.5 5.032a.732.732 0 0 0-.722.915c1.736 6.677 7.775 11.341 14.683 11.341a.732.732 0 0 0 0-1.464A13.706 13.706 0 0 1 1.44 11.02a.732.732 0 0 0-.694-.547z"/></svg> -->
+            </div>
+          </a>
+
+          <a href="https://discord.gg/NCGtXBC2uB" target="_blank">
+            <div class="flex aspect-square w-12 cursor-pointer items-center justify-center rounded-full border border-gray-100 transition-colors duration-300 hover:bg-gray-100 hover:text-[#111315]">
+              <i class="fa-brands fa-discord"></i>
+            </div>
+          </a>
+
+          <a href="https://github.com/Pasek108">
+            <div class="flex aspect-square w-12 cursor-pointer items-center justify-center rounded-full border border-gray-100 transition-colors duration-300 hover:bg-gray-100 hover:text-[#111315]">
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </a>
+
+          <a class="hover:underline" href="https://pasek108.github.io/Resume/" target="_blank"><i class="inline-flex items-center justify-center w-6 text-xl fa-solid fa-briefcase"></i> Portfolio</a>
+
+          <a class="hover:underline" href="https://github.com/Pasek108" target="_blank"><i class="inline-flex items-center justify-center w-6 text-xl fa-brands fa-github"></i> Pasek108</a>
         </div>
       </div>
 
       <div class="flex-grow w-2/5 h-full overflow-hidden rounded-md">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdIQCYW9OVJEEw866heJv_ANlmGI3Lps2N60Mf6b29V3flGnA/viewform?usp=dialog" frameborder="0" marginheight="0" marginwidth="0" class="h-full min-h-[80vh] w-full">Loading</iframe>
+        <iframe id="contact-form" src="https://docs.google.com/forms/d/e/1FAIpQLSdIQCYW9OVJEEw866heJv_ANlmGI3Lps2N60Mf6b29V3flGnA/viewform?usp=dialog" frameborder="0" marginheight="0" marginwidth="0" class="h-full min-h-[80vh] w-full">Loading</iframe>
       </div>
     </div>
   </div>

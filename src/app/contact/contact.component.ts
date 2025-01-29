@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
-
+  scrollToContactForm() {
+    const form = document?.querySelector("#contact-form");
+    form?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 }

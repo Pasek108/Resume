@@ -1,9 +1,9 @@
-import { NgClass, NgStyle } from '@angular/common';
+import { NgClass, NgOptimizedImage, NgStyle, SlicePipe } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-image-carousel',
-  imports: [NgClass, NgStyle],
+  imports: [NgClass, NgStyle, NgOptimizedImage, SlicePipe],
   templateUrl: './image-carousel.component.html',
   styleUrl: './image-carousel.component.css',
 })

@@ -55,21 +55,11 @@
   ],
   "projects": [
     {
-      "name": "Name",
-      "images": ["img"],
-      "description": "desc",
-      "live_version": "link",
-      "github_repo": "link",
-      "skills": [],
-      "group": 0,
-      "hidden": true
-    },
-    {
       "name": "BeFunge93Interpreter",
       "images": [
-        "https://github.com/Pasek108/BeFunge93Interpreter/blob/main/_for_readme/nyan_cat.png?raw=true",
-        "https://github.com/Pasek108/BeFunge93Interpreter/blob/main/_for_readme/program_running.png?raw=true",
-        "https://github.com/Pasek108/BeFunge93Interpreter/blob/main/_for_readme/contact.png?raw=true"
+        "images/BeFunge93Interpreter/program_running.png",
+        "images/BeFunge93Interpreter/nyan_cat.png",
+        "images/BeFunge93Interpreter/contact.png"
       ],
       "description": "BeFunge 93 interpreter with grid visualisation, debugging tools and nyan cats animations.",
       "live_version": "https://pasek108.github.io/BeFunge93Interpreter/",
@@ -112,37 +102,6 @@
       "github_repo": "https://github.com/Pasek108/PMA-BetterDesigner",
       "skills": [2, 1, 28, 0],
       "group": 4,
-      "hidden": false
-    },
-
-    {
-      "name": "Pogoda",
-      "images": ["./Images/Projects/weather.png"],
-      "description": "Pogoda w React napisana z użyciem Open Weather API oraz Geonames API",
-      "live_version": "https://pogoda-open-weather.netlify.app",
-      "github_repo": "https://github.com/Pasek108/Pogoda",
-      "skills": ["HTML", "CSS", "REACT"],
-      "group": 0,
-      "hidden": false
-    },
-    {
-      "name": "Countries API",
-      "images": ["./Images/Projects/countries-api.png"],
-      "description": "Strona do przeglądania krajów oraz gra w ich rozpoznawanie napisana z użyciem REST Countries API",
-      "live_version": "https://pas-artur.000webhostapp.com/WhereInTheWorld/",
-      "github_repo": "https://github.com/Pasek108/WhereInTheWorld",
-      "skills": ["HTML", "LESS", "JS"],
-      "group": 0,
-      "hidden": false
-    },
-    {
-      "name": "Rock Paper Scissors",
-      "images": ["./Images/Projects/rock-paper-scissors.png"],
-      "description": "Gra w \"kamień, papier, nożyce\" oraz \"kamień, papier, nożyce, jaszczurka, spock\"",
-      "live_version": "https://pas-artur.000webhostapp.com/RockPaperScissors/",
-      "github_repo": "https://github.com/Pasek108/RockPaperScissors",
-      "skills": ["HTML", "LESS", "JS"],
-      "group": 0,
       "hidden": false
     }
   ]
