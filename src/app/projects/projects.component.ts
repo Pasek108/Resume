@@ -7,9 +7,9 @@ import { ProjectComponent } from '../modules/project/project.component';
   selector: 'app-projects',
   imports: [ProjectComponent],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.css'
+  styleUrl: './projects.component.css',
 })
-export class ProjectsComponent  implements OnInit {
+export class ProjectsComponent implements OnInit {
   projects_data: Project[] = [];
 
   ngOnInit() {
@@ -20,7 +20,7 @@ export class ProjectsComponent  implements OnInit {
         description: project_data.description,
         live_version: project_data.live_version,
         github_repo: project_data.github_repo,
-        skills: project_data.skills.map(skill_id => projects_data.skills[+skill_id]),
+        skills: project_data.skills.map((skill_id) => projects_data.skills[+skill_id]),
         group: projects_data.groups[project_data.group],
         hidden: project_data.hidden,
       };

@@ -14,17 +14,17 @@
     </div>
 
     <nav [style.display]="menu_hidden ? 'none' : null" class="left-0 top-20 z-50 flex cursor-pointer items-center justify-end gap-8 font-bold uppercase max-sm:absolute max-sm:h-[calc(100vh-5rem)] max-sm:w-full max-sm:flex-col max-sm:justify-start max-sm:gap-0 max-sm:bg-[#111315] max-sm:py-4 max-sm:text-2xl">
-      <a (click)="toggleMenu()" routerLink="about" routerLinkActive="active" class="group px-1 transition duration-300 max-sm:w-full max-sm:p-4 max-sm:text-right [&.active_div]:max-w-full">
+      <a (click)="toggleMenu()" (click)="scrollToTop()" routerLink="about" routerLinkActive="active" class="group px-1 transition duration-300 max-sm:w-full max-sm:p-4 max-sm:text-right [&.active_div]:max-w-full">
         About
         <div class="h-0.5 max-w-0 bg-[#ff5722] transition-all duration-500 group-hover:max-w-full max-sm:mb-1"></div>
       </a>
 
-      <a (click)="toggleMenu()" routerLink="projects" routerLinkActive="active" class="group px-1 transition duration-300 max-sm:w-full max-sm:p-4 max-sm:text-right [&.active_div]:max-w-full">
+      <a (click)="toggleMenu()" (click)="scrollToTop()" routerLink="projects" routerLinkActive="active" class="group px-1 transition duration-300 max-sm:w-full max-sm:p-4 max-sm:text-right [&.active_div]:max-w-full">
         Projects
         <div class="h-0.5 max-w-0 bg-[#ff5722] transition-all duration-500 group-hover:max-w-full max-sm:mb-1"></div>
       </a>
 
-      <a (click)="toggleMenu()" routerLink="contact" routerLinkActive="active" class="group px-1 transition duration-300 max-sm:w-full max-sm:p-4 max-sm:text-right [&.active_div]:max-w-full">
+      <a (click)="toggleMenu()" (click)="scrollToTop()" routerLink="contact" routerLinkActive="active" class="group px-1 transition duration-300 max-sm:w-full max-sm:p-4 max-sm:text-right [&.active_div]:max-w-full">
         Contact
         <div class="h-0.5 max-w-0 bg-[#ff5722] transition-all duration-500 group-hover:max-w-full max-sm:mb-1"></div>
       </a>

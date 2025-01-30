@@ -8,13 +8,13 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  menu_hidden = true;
   screen_size = window.innerWidth;
+  menu_hidden = window.innerWidth < 640;
 
   constructor() {
     window.addEventListener('resize', () => {
       this.screen_size = window.innerWidth;
-      if (this.screen_size >= 640) this.menu_hidden = false;
+      this.menu_hidden = window.innerWidth < 640;
     });
   }
 

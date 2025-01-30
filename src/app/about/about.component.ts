@@ -1,11 +1,11 @@
 import { NgStyle } from '@angular/common';
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-about',
   imports: [NgStyle],
   templateUrl: './about.component.html',
-  styleUrl: './about.component.css'
+  styleUrl: './about.component.css',
 })
 export class AboutComponent {
   bg_x = 900;
@@ -16,7 +16,7 @@ export class AboutComponent {
   scroll_y = 0;
 
   onScroll() {
-    const main_container = document?.querySelector("#main-container");
+    const main_container = document?.querySelector('#main-container');
     this.scroll_x = main_container?.scrollLeft || 0;
     this.scroll_y = main_container?.scrollTop || 0;
 
