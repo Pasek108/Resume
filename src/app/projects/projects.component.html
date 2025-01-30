@@ -1,5 +1,5 @@
-<div class="relative w-full pb-[12vh] overflow-hidden">
-  <div class="flex h-full min-h-72 w-full flex-col items-center justify-center border-b border-[#717171] bg-[#212529] bg-[radial-gradient(circle,rgba(0,0,0,0.1)_0,rgba(0,0,0,0.5)_100%)] bg-no-repeat p-8 max-sm:p-4 text-[#ff5722]">
+<div class="relative w-full overflow-hidden pb-[12vh]">
+  <div class="flex h-full min-h-72 w-full flex-col items-center justify-center border-b border-[#717171] bg-[#212529] bg-[radial-gradient(circle,rgba(0,0,0,0.1)_0,rgba(0,0,0,0.5)_100%)] bg-no-repeat p-8 text-[#ff5722] max-sm:p-4">
     <h1 class="mb-0 font-bona text-7xl max-sm:text-5xl">Projects</h1>
   </div>
 
@@ -16,7 +16,7 @@
       </svg>
     </div>
 
-    <div class="flex max-w-[80rem] max-sm:max-w-full flex-col gap-8">
+    <div class="flex max-w-[80rem] flex-col gap-8 max-sm:max-w-full">
       @for (project_data of projects_data; track $index) {
         @if (!project_data.hidden) {
           <app-project [project]="project_data" [id]="$index"></app-project>

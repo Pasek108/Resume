@@ -1,35 +1,62 @@
-
-
-<!--
-<footer>
-  <div class="contact">
-    <div class="author-info">
-      <div class="name">
-        Artur Pas <a href="https://maps.app.goo.gl/W6kWWKjGn4EQKEQU6" target="_blank"><i class="fa-solid fa-location-dot"></i> Poland, Rzeszów</a>
-      </div>
-      <a href="https://pasek108.github.io/Resume/" target="_blank"><i class="fa-solid fa-briefcase"></i> Portfolio</a>
-      <a href="https://github.com/Pasek108" target="_blank"><i class="fa-brands fa-github"></i> Pasek108</a>
-      <a href="https://www.linkedin.com/in/artur-pas/" target="_blank"> <i class="fa-brands fa-linkedin"></i> Artur Pas</a>
-    </div>
-
-    <div class="contact-forms">
-      <div class="name">Contact me</div>
-      <button class="contact-open">Through this form</button>
-      <div class="contact-links">
-        <a href="mailto:artur.pas@proton.me?subject=Befunge93Interpreter%20-%20Contact&body=Nice%20project.%20have%20a%20nice%20day."><i class="fa-solid fa-envelope"></i> artur.pas&#64;proton.me</a>
-        <span><i class="fa-brands fa-discord"></i> arturpas</span>
-      </div>
-    </div>
+<div class="relative w-full overflow-hidden bg-[url(/images/noise.png)] pb-[12vh]" (wheel)="onScroll()" (mousemove)="onMouseMove($event)">
+  <div class="flex h-full min-h-72 w-full flex-col items-center justify-center border-b border-[#717171] bg-[#212529] bg-[radial-gradient(circle,rgba(0,0,0,0.1)_0,rgba(0,0,0,0.5)_100%)] bg-no-repeat p-8 text-[#ff5722] max-sm:p-4">
+    <h1 class="mb-0 font-bona text-7xl max-sm:text-5xl">About me</h1>
   </div>
 
-  <div class="copyright">&copy; Copyright 2025</div>
-</footer>
+  <div class="flex flex-col justify-center w-full p-8 max-sm:p-4">
+    <div class="relative flex flex-col w-full h-full max-w-screen-xl min-h-72">
+      <div class="absolute top-0 left-0 overflow-hidden rounded-md" style="clip-path: polygon(98% 0, 0 0, 0 98%)">
+        <div class="h-52 w-52 border-[0.75rem] [border-image:linear-gradient(to_top_left,#ff5722,#717171,#ff5722)_10]"></div>
+      </div>
 
-<div class="contact-container" style="display: none">
-  <div class="contact-content">
-    <div class="contact-close"><i class="fa-solid fa-xmark"></i></div>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSewJbgAGJRNq9mO7W44wt0PnJ1on_vn6PFurWQKeNeWbXfU4g/viewform?usp=dialog" frameborder="0" marginheight="0" marginwidth="0">Loading</iframe>
+      <div class="absolute bottom-0 right-0 overflow-hidden rounded-md" style="clip-path: polygon(100% 2%, 2% 100%, 100% 100%)">
+        <div class="h-52 w-52 border-[0.75rem] [border-image:linear-gradient(to_top_left,#ff5722,#717171,#ff5722)_10]"></div>
+      </div>
+
+      <div class="flex flex-wrap gap-16 gap-y-8 p-14">
+        <div class="flex-grow w-3/5 max-lg:w-full">
+          <h1 class="mb-0 font-bona text-5xl text-[#ff5722] max-sm:text-5xl">Welcome</h1>
+          <div class="my-4 border-l-4 border-[#717171] px-4 py-1">
+            <p class="mb-4 text-justify">
+              My name is Artur Pas. I'm a developer based in
+              <a class="text-left uppercase underline-offset-2 hover:text-[#ff5722] hover:underline" href="https://maps.app.goo.gl/W6kWWKjGn4EQKEQU6" target="_blank"><i class="fa-solid fa-location-dot"></i> Rzeszów, Poland.</a>
+              I'm an aspiring software developer with a strong foundations in programming.
+            </p>
+            <p class="text-justify">My key strengths include quick learning, creativity and problem-solving. I enjoy solving various challenges, learining new things and building interesting solutions. My focus is on writing clean, efficient code and grow as a developer while continuously expanding my knowledge</p>
+          </div>
+        </div>
+
+        <div class="relative flex-grow w-1/4 max-lg:w-full">
+          <h4 class="mb-0 mt-6 font-bona text-2xl text-[#ff5722] max-sm:text-2xl">Contents</h4>
+
+          <div class="absolute left-0 overflow-hidden rounded-md top-16 -z-0" style="clip-path: polygon(80% 0, 0 0, 0 80%, 80% 80%)">
+            <div class="h-20 w-20 border-4 [border-image:linear-gradient(to_top_left,#ff5722,#717171,#ff5722)_10]"></div>
+          </div>
+
+          <ul class="relative z-10 p-8 text-lg">
+            <li class="flex items-center gap-2 cursor-pointer group">
+              <div class="w-1 h-1 transition-all bg-white rounded-full group-hover:w-8"></div>
+              Skills
+            </li>
+            <li class="flex items-center gap-2 cursor-pointer group">
+              <div class="w-1 h-1 transition-all bg-white rounded-full group-hover:w-8"></div>
+              Experience
+            </li>
+            <li class="flex items-center gap-2 cursor-pointer group">
+              <div class="w-1 h-1 transition-all bg-white rounded-full group-hover:w-8"></div>
+              Education
+            </li>
+            <li class="flex items-center gap-2 cursor-pointer group">
+              <div class="w-1 h-1 transition-all bg-white rounded-full group-hover:w-8"></div>
+              Interests
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center p-8 max-sm:p-4"></div>
   </div>
+
+  <div class="fixed inset-0 transition duration-300 pointer-events-none -z-10 lg:absolute" [ngStyle]="{ background: 'radial-gradient(400px at ' + bg_x + 'px ' + bg_y + 'px, rgba(0,0,0,0.1), rgba(0,0,0,0.5) 100%)' }"></div>
 </div>
--->
-
