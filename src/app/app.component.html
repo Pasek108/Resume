@@ -1,24 +1,32 @@
-<header class="flex h-20 w-full justify-center overflow-hidden border-b border-[#717171] bg-[] bg-no-repeat px-8 py-4 max-sm:p-4" style="background: radial-gradient(circle at 0, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.5) 100%) #212529">
+<header class="flex h-20 w-full justify-center border-b border-[#717171] bg-[] bg-no-repeat px-8 py-4 max-sm:p-4" style="background: radial-gradient(circle at 0, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.5) 100%) #212529">
   <div class="flex items-center justify-between w-full max-w-screen-xl gap-16">
     <div class="-mt-[5px] flex flex-col">
       <div class="text-3xl font-bold text-[#ff5722]">Artur Pas</div>
       <div class="-mt-1 text-sm">Web developer</div>
     </div>
 
-    <nav class="flex items-center justify-end gap-8 font-bold uppercase cursor-pointer">
-      <a routerLink="about" routerLinkActive="active" class="group px-1 transition duration-300 [&.active_div]:max-w-full">
+    <div class="sm:hidden" (click)="toggleMenu()">
+      @if (menu_hidden) {
+        <i class="text-4xl fa-solid fa-bars"></i>
+      } @else {
+        <i class="text-4xl fa-solid fa-xmark"></i>
+      }
+    </div>
+
+    <nav [style.display]="menu_hidden ? 'none' : null" class="left-0 top-20 z-50 flex cursor-pointer items-center justify-end gap-8 font-bold uppercase max-sm:absolute max-sm:h-[calc(100vh-5rem)] max-sm:w-full max-sm:flex-col max-sm:justify-start max-sm:gap-0 max-sm:bg-[#111315] max-sm:py-4 max-sm:text-2xl">
+      <a (click)="toggleMenu()" routerLink="about" routerLinkActive="active" class="group px-1 transition duration-300 max-sm:w-full max-sm:p-4 max-sm:text-right [&.active_div]:max-w-full">
         About
-        <div class="h-0.5 max-w-0 bg-[#ff5722] transition-all duration-500 group-hover:max-w-full"></div>
+        <div class="h-0.5 max-w-0 bg-[#ff5722] transition-all duration-500 group-hover:max-w-full max-sm:mb-1"></div>
       </a>
 
-      <a routerLink="projects" routerLinkActive="active" class="group px-1 transition duration-300 [&.active_div]:max-w-full">
+      <a (click)="toggleMenu()" routerLink="projects" routerLinkActive="active" class="group px-1 transition duration-300 max-sm:w-full max-sm:p-4 max-sm:text-right [&.active_div]:max-w-full">
         Projects
-        <div class="h-0.5 max-w-0 bg-[#ff5722] transition-all duration-500 group-hover:max-w-full"></div>
+        <div class="h-0.5 max-w-0 bg-[#ff5722] transition-all duration-500 group-hover:max-w-full max-sm:mb-1"></div>
       </a>
 
-      <a routerLink="contact" routerLinkActive="active" class="group px-1 transition duration-300 [&.active_div]:max-w-full">
+      <a (click)="toggleMenu()" routerLink="contact" routerLinkActive="active" class="group px-1 transition duration-300 max-sm:w-full max-sm:p-4 max-sm:text-right [&.active_div]:max-w-full">
         Contact
-        <div class="h-0.5 max-w-0 bg-[#ff5722] transition-all duration-500 group-hover:max-w-full"></div>
+        <div class="h-0.5 max-w-0 bg-[#ff5722] transition-all duration-500 group-hover:max-w-full max-sm:mb-1"></div>
       </a>
     </nav>
   </div>
@@ -29,7 +37,7 @@
   <router-outlet></router-outlet>
 
   <div (click)="scrollToTop()" class="fixed z-20 flex items-center justify-center w-12 bg-black bg-opacity-50 border border-white rounded-lg cursor-pointer bottom-2 right-5 aspect-square hover:bg-black">
-    <i class="-mr-[0.1rem] text-xl -rotate-90 fa-solid fa-shuttle-space"></i>
+    <i class="fa-solid fa-shuttle-space -mr-[0.1rem] -rotate-90 text-xl"></i>
   </div>
 
   <footer class="relative flex w-full flex-col items-center justify-center gap-12 bg-[#111315]">
@@ -38,7 +46,7 @@
         <path d="M0 77C0 77 360 10 720 10C1080 10 1440 77 1440 77V79H0V77Z" fill="#111315" stroke="#717171"></path>
       </svg>
     </div>
-    
+
     <div class="relative z-10 flex w-full flex-col items-center justify-center gap-12 bg-[#111315]">
       <div class="w-[40rem] max-w-full px-8 pt-8 max-lg:pt-16 max-sm:px-4">
         <section class="mx-5">

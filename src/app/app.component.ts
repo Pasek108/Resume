@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -8,9 +8,24 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
+  menu_hidden = true;
+  screen_size = window.innerWidth;
+
+  constructor() {
+    window.addEventListener('resize', () => {
+      this.screen_size = window.innerWidth;
+      if (this.screen_size >= 640) this.menu_hidden = false;
+    });
+  }
+
+  toggleMenu() {
+    if (this.screen_size >= 640) return;
+    this.menu_hidden = !this.menu_hidden;
+  }
+
   scrollToTop() {
-    const form = document?.querySelector("#page-top");
+    const form = document?.querySelector('#page-top');
     form?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    console.log(form)
+    console.log(form);
   }
 }

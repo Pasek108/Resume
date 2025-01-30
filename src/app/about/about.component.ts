@@ -20,7 +20,6 @@ export class AboutComponent {
     this.scroll_x = main_container?.scrollLeft || 0;
     this.scroll_y = main_container?.scrollTop || 0;
 
-    console.log(this.scroll_x, this.scroll_y)
     this.updateBackground();
   }
 
