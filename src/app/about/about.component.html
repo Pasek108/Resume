@@ -1,10 +1,10 @@
-<div class="relative w-full overflow-hidden bg-[url(/images/noise.png)] pb-[12vh]" (wheel)="onScroll()" (mousemove)="onMouseMove($event)">
+<div class="relative w-full overflow-hidden bg-[url(/images/noise.png)] pb-[13vh]" (mousemove)="onMouseMove($event)">
   <div class="flex h-full min-h-72 w-full flex-col items-center justify-center border-b border-[#717171] bg-[#212529] bg-[radial-gradient(circle,rgba(0,0,0,0.1)_0,rgba(0,0,0,0.5)_100%)] bg-no-repeat p-8 text-[#ff5722] max-sm:p-4">
     <h1 class="mb-0 font-bona text-7xl max-sm:text-5xl">About me</h1>
   </div>
 
-  <div class="flex flex-col justify-center w-full p-8 max-sm:px-0">
-    <div class="relative flex flex-col w-full h-full max-w-screen-xl min-h-72">
+  <div class="flex flex-col items-center w-full p-8 max-sm:px-0">
+    <div class="relative flex flex-col w-full h-full max-w-screen-xl my-8 min-h-72">
       <div class="absolute top-0 left-0 overflow-hidden rounded-md" style="clip-path: polygon(98% 0, 0 0, 0 98%)">
         <div class="h-52 w-52 border-[0.75rem] [border-image:linear-gradient(to_top_left,#ff5722,#717171,#ff5722)_10]"></div>
       </div>
@@ -16,14 +16,19 @@
       <div class="flex flex-wrap gap-16 p-20 gap-y-8 max-md:p-14 max-sm:p-8">
         <div class="flex-grow w-3/5 max-lg:w-full">
           <h1 class="font-bona text-5xl text-[#ff5722] max-sm:mb-3 max-sm:text-4xl">Welcome</h1>
-          <div class="border-[#717171] sm:my-4 sm:border-l-4 sm:px-4 sm:py-1">
+
+          <div class="border-[#717171] [border-image:linear-gradient(to_top_left,#ff5722,#717171,#ff5722)_10] max-sm:mb-4 sm:my-4 sm:border-l-4 sm:px-4 sm:py-1">
             <p class="mb-4 text-justify">
               My name is Artur Pas. I'm a developer based in
               <a class="text-left uppercase underline-offset-2 hover:text-[#ff5722] hover:underline" href="https://maps.app.goo.gl/W6kWWKjGn4EQKEQU6" target="_blank"><i class="fa-solid fa-location-dot"></i> Rzeszów, Poland.</a>
               I'm an aspiring software developer with a strong foundations in programming.
             </p>
-            <p class="text-justify">My key strengths include quick learning, creativity and problem-solving. I enjoy solving various challenges, learining new things and building interesting solutions. My focus is on writing clean, efficient code and grow as a developer while continuously expanding my knowledge</p>
+            <p class="text-justify">My key strengths include quick learning, creativity and problem-solving. I enjoy solving various challenges, learining new things and building interesting solutions. My focus is on writing clean, efficient code and grow as a developer while continuously expanding my knowledge.</p>
           </div>
+
+          <a href="Artur_Pas_Resume.pdf" target="_blank" class="mt-5 block w-fit cursor-pointer rounded-md border border-white p-2 px-4 text-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#ff5622c1]"><i class="fa-solid fa-file-pdf"></i> Download Resume</a>
+
+          <!--<button class="p-2 px-4 text-lg border border-white rounded-md"><i class="fa-solid fa-gamepad"></i> Play a game</button>-->
         </div>
 
         <div class="relative flex-grow w-1/4 max-lg:w-full">
@@ -40,6 +45,10 @@
             </li>
             <li class="flex items-center gap-2 cursor-pointer group">
               <div class="w-1 h-1 transition-all bg-white rounded-full group-hover:w-8"></div>
+              What I do
+            </li>
+            <li class="flex items-center gap-2 cursor-pointer group">
+              <div class="w-1 h-1 transition-all bg-white rounded-full group-hover:w-8"></div>
               Experience
             </li>
             <li class="flex items-center gap-2 cursor-pointer group">
@@ -48,15 +57,106 @@
             </li>
             <li class="flex items-center gap-2 cursor-pointer group">
               <div class="w-1 h-1 transition-all bg-white rounded-full group-hover:w-8"></div>
-              Interests
+              Projects
             </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="flex p-8 max-sm:p-4">aaa</div>
+    <div class="flex flex-col items-start justify-start w-full max-w-screen-xl px-20 py-8 max-sm:py-4">
+      <header class="flex flex-col items-center justify-center w-full mb-10">
+        <div class="flex flex-col items-center justify-center text-3xl font-bold">
+          My skills
+          <div class="my-3 h-1 w-20 rounded-sm bg-[#ff5722]"></div>
+        </div>
+
+        <p class="w-[40rem] max-w-full text-center">My self proclaimed skills. I've been programming from 2016 and those are skills I'm comfortable with and eager to learn.</p>
+      </header>
+
+      <div class="flex w-full">
+        <div class="w-1/4 flex-grow border border-[#717171] p-4">
+          <h3 class="flex items-center justify-between gap-4 border-b border-[#ff5722] pb-2 text-lg">
+            <div class="">
+              <i class="inline-flex items-center justify-center w-6 h-6 fa-solid fa-code"></i>
+              Languages
+            </div>
+          </h3>
+
+          <ul class="mt-2 ml-5">
+            <li class="list-disc">JavaScript</li>
+            <li class="list-disc">CSS</li>
+            <li class="list-disc">HTML</li>
+          </ul>
+        </div>
+
+        <div class="w-1/4 flex-grow border border-[#717171] p-4">
+          <h3 class="flex items-center justify-between gap-4 border-b border-[#ff5722] pb-2 text-lg">
+            <div class="">
+              <i class="inline-flex items-center justify-center w-6 h-6 fa-solid fa-gears"></i>
+              Frameworks
+            </div>
+
+            <div class="relative inline-flex items-center justify-center group">
+              <i class="inline-flex items-center justify-center w-5 h-5 text-xs border border-white rounded-full fa-solid fa-question"></i>
+
+              <div class="shadow-xs tooltip invisible absolute -right-1.5 -top-10 z-10 inline-block whitespace-nowrap rounded-lg bg-gray-700 px-3 py-1 text-sm font-medium text-white opacity-0 transition-opacity duration-300 group-hover:visible group-hover:opacity-100">
+                & Libraries
+                <div class="absolute -bottom-1.5 right-2 -z-10 h-4 w-4 bg-gray-700" style="clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%)"></div>
+              </div>
+            </div>
+          </h3>
+
+          <ul class="mt-2 ml-5">
+            <li class="list-disc">JavaScript</li>
+            <li class="list-disc">CSS</li>
+            <li class="list-disc">HTML</li>
+          </ul>
+        </div>
+
+        <div class="w-1/4 flex-grow border border-[#717171] p-4">
+          <h3 class="flex items-center justify-between gap-4 border-b border-[#ff5722] pb-2 text-lg">
+            <div class="">
+              <i class="inline-flex items-center justify-center w-6 h-6 fa-solid fa-desktop"></i>
+              Programs
+            </div>
+
+            <div class="relative inline-flex items-center justify-center group">
+              <i class="inline-flex items-center justify-center w-5 h-5 text-xs border border-white rounded-full fa-solid fa-question"></i>
+
+              <div class="shadow-xs tooltip invisible absolute -right-1.5 -top-10 z-10 inline-block whitespace-nowrap rounded-lg bg-gray-700 px-3 py-1 text-sm font-medium text-white opacity-0 transition-opacity duration-300 group-hover:visible group-hover:opacity-100">
+                & Tools
+                <div class="absolute -bottom-1.5 right-2 -z-10 h-4 w-4 bg-gray-700" style="clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%)"></div>
+              </div>
+            </div>
+          </h3>
+
+          <ul class="mt-2 ml-5">
+            <li class="list-disc">JavaScript</li>
+            <li class="list-disc">CSS</li>
+            <li class="list-disc">HTML</li>
+          </ul>
+        </div>
+
+        <div class="w-1/4 flex-grow border border-[#717171] p-4">
+          <h3 class="flex items-center justify-between gap-4 border-b border-[#ff5722] pb-2 text-lg">
+            <div class="">
+              <i class="inline-flex items-center justify-center w-6 h-6 border border-white rounded-full fa-solid fa-ellipsis"></i>
+              Other
+            </div>
+          </h3>
+
+          <ul class="mt-2 ml-5">
+            <li class="list-disc">JavaScript</li>
+            <li class="list-disc">CSS</li>
+            <li class="list-disc">HTML</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="fixed inset-0 transition duration-300 pointer-events-none -z-10 lg:absolute" [ngStyle]="{ background: 'radial-gradient(400px at ' + bg_x + 'px ' + bg_y + 'px, rgba(0,0,0,0.1), rgba(0,0,0,0.5) 100%)' }"></div>
 </div>
+
+<app-footer></app-footer>

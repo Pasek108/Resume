@@ -1,14 +1,24 @@
 import { NgOptimizedImage } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FooterComponent } from '../modules/footer/footer.component';
 
 @Component({
   selector: 'app-contact',
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, FooterComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css',
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
   loading: boolean = true;
+
+  ngOnInit(): void {
+    setTimeout(this.scrollToTop, 500);
+  }
+
+  scrollToTop() {
+    const page_top = document?.querySelector('#page-top');
+    page_top?.scrollIntoView({ behavior: 'instant', block: 'start' });
+  }
 
   scrollToContactForm() {
     const form = document?.querySelector('#contact-form');

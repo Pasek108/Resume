@@ -1,19 +1,32 @@
 import { NgStyle } from '@angular/common';
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { FooterComponent } from '../modules/footer/footer.component';
 
 @Component({
   selector: 'app-about',
-  imports: [NgStyle],
+  imports: [NgStyle, FooterComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit {
   bg_x = 900;
   bg_y = 50;
   mouse_x = 0;
   mouse_y = 0;
   scroll_x = 0;
   scroll_y = 0;
+
+  ngOnInit(): void {
+    setTimeout(this.scrollToTop, 500);
+
+    const main_container = document?.querySelector('#main-container');
+    main_container?.addEventListener("scroll", this.onScroll.bind(this));
+  }
+
+  scrollToTop() {
+    const page_top = document?.querySelector('#page-top');
+    page_top?.scrollIntoView({ behavior: 'instant', block: 'start' });
+  }
 
   onScroll() {
     const main_container = document?.querySelector('#main-container');

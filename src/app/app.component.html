@@ -14,17 +14,17 @@
     </div>
 
     <nav [style.display]="menu_hidden ? 'none' : null" class="left-0 top-20 z-50 flex cursor-pointer items-center justify-end gap-8 font-bold uppercase max-sm:absolute max-sm:h-[calc(100vh-5rem)] max-sm:w-full max-sm:flex-col max-sm:justify-start max-sm:gap-0 max-sm:bg-[#111315] max-sm:py-4 max-sm:text-2xl">
-      <a (click)="toggleMenu()" (click)="scrollToTop()" routerLink="about" routerLinkActive="active" class="group px-1 transition duration-300 max-sm:w-full max-sm:p-4 max-sm:text-right [&.active_div]:max-w-full">
+      <a (click)="toggleMenu()" routerLink="about" routerLinkActive="active" #aboutLinkActiveRef="routerLinkActive" (click)="scrollToTop(aboutLinkActiveRef.isActive)" class="group px-1 transition duration-300 max-sm:w-full max-sm:p-4 max-sm:text-right [&.active_div]:max-w-full">
         About
         <div class="h-0.5 max-w-0 bg-[#ff5722] transition-all duration-500 group-hover:max-w-full max-sm:mb-1"></div>
       </a>
 
-      <a (click)="toggleMenu()" (click)="scrollToTop()" routerLink="projects" routerLinkActive="active" class="group px-1 transition duration-300 max-sm:w-full max-sm:p-4 max-sm:text-right [&.active_div]:max-w-full">
+      <a (click)="toggleMenu()" routerLink="projects" routerLinkActive="active" #projectsLinkActiveRef="routerLinkActive" (click)="scrollToTop(projectsLinkActiveRef.isActive)" class="group px-1 transition duration-300 max-sm:w-full max-sm:p-4 max-sm:text-right [&.active_div]:max-w-full">
         Projects
         <div class="h-0.5 max-w-0 bg-[#ff5722] transition-all duration-500 group-hover:max-w-full max-sm:mb-1"></div>
       </a>
 
-      <a (click)="toggleMenu()" (click)="scrollToTop()" routerLink="contact" routerLinkActive="active" class="group px-1 transition duration-300 max-sm:w-full max-sm:p-4 max-sm:text-right [&.active_div]:max-w-full">
+      <a (click)="toggleMenu()" routerLink="contact" routerLinkActive="active" #contactLinkActiveRef="routerLinkActive" (click)="scrollToTop(contactLinkActiveRef.isActive)" class="group px-1 transition duration-300 max-sm:w-full max-sm:p-4 max-sm:text-right [&.active_div]:max-w-full">
         Contact
         <div class="h-0.5 max-w-0 bg-[#ff5722] transition-all duration-500 group-hover:max-w-full max-sm:mb-1"></div>
       </a>
@@ -32,68 +32,12 @@
   </div>
 </header>
 
-<main id="main-container" class="h-[calc(100vh-5rem)] w-full overflow-y-auto scroll-smooth">
+<main id="main-container" class="h-[calc(100vh-5rem)] w-full overflow-y-auto scroll-smooth" (scroll)="onScroll()" [@routeAnimations]="getRouteAnimationData()">
   <div id="page-top"></div>
   <router-outlet></router-outlet>
 
-  <div (click)="scrollToTop()" class="fixed z-20 flex items-center justify-center w-12 bg-black bg-opacity-50 border border-white rounded-lg cursor-pointer bottom-2 right-5 aspect-square hover:bg-black">
+  <div (click)="scrollToTop(true)" class="fixed bottom-2 right-5 z-20 flex aspect-square w-12 cursor-pointer items-center justify-center overflow-hidden rounded-lg border border-white bg-black bg-opacity-50 transition-colors hover:bg-[#717171]">
+    <div class="absolute bottom-0 left-0 w-full bg-[#ff5722d8]" [style.height]="scroll_percent + '%'"></div>
     <i class="fa-solid fa-shuttle-space -mr-[0.1rem] -rotate-90 text-xl"></i>
   </div>
-
-  <footer class="relative flex w-full flex-col items-center justify-center gap-12 bg-[#111315]">
-    <div class="left-100% pointer-events-none absolute -top-[calc(10rem-1px)] z-0 flex h-[10rem] w-full items-end justify-start max-md:-top-[calc(10rem-0.5px)]">
-      <svg class="w-full bg-transparent" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg" fill="none">
-        <path d="M0 77C0 77 360 10 720 10C1080 10 1440 77 1440 77V79H0V77Z" fill="#111315" stroke="#717171"></path>
-      </svg>
-    </div>
-
-    <div class="relative z-10 flex w-full flex-col items-center justify-center gap-12 bg-[#111315]">
-      <div class="w-[40rem] max-w-full px-8 pt-8 max-lg:pt-16 max-sm:px-4">
-        <section class="mx-5">
-          <blockquote class="relative w-full p-10 m-1 text-center text-white">
-            We all die. The goal isn't to live forever, the goal is to create something that will.<br />
-            <cite> - Chuck Palahniuk</cite>
-          </blockquote>
-        </section>
-      </div>
-
-      <div class="-mb-8 text-xl font-bold">Contact me</div>
-      <div class="flex gap-4 px-8 text-2xl text-gray-100 max-sm:px-4">
-        <a href="mailto:artur.pas@proton.me">
-          <div class="flex aspect-square w-12 cursor-pointer items-center justify-center rounded-full border border-gray-100 transition-colors duration-300 hover:bg-gray-100 hover:text-[#111315]">
-            <i class="fa-solid fa-envelope"></i>
-          </div>
-        </a>
-
-        <a href="https://www.linkedin.com/in/artur-pas/" target="_blank">
-          <div class="flex aspect-square w-12 cursor-pointer items-center justify-center rounded-full border border-gray-100 transition-colors duration-300 hover:bg-gray-100 hover:text-[#111315]">
-            <i class="fa-brands fa-linkedin"></i>
-          </div>
-        </a>
-
-        <a href="https://www.reddit.com/user/Artur_Pas/" target="_blank">
-          <div class="flex aspect-square w-12 cursor-pointer items-center justify-center rounded-full border border-gray-100 transition-colors duration-300 hover:bg-gray-100 hover:text-[#111315]">
-            <i class="fa-brands fa-reddit-alien"></i>
-          </div>
-        </a>
-
-        <a href="https://discord.gg/NCGtXBC2uB" target="_blank">
-          <div class="flex aspect-square w-12 cursor-pointer items-center justify-center rounded-full border border-gray-100 transition-colors duration-300 hover:bg-gray-100 hover:text-[#111315]">
-            <i class="fa-brands fa-discord"></i>
-          </div>
-        </a>
-
-        <a href="https://github.com/Pasek108">
-          <div class="flex aspect-square w-12 cursor-pointer items-center justify-center rounded-full border border-gray-100 transition-colors duration-300 hover:bg-gray-100 hover:text-[#111315]">
-            <i class="fa-brands fa-github"></i>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="flex items-center justify-center w-full gap-1 px-4 py-3 text-sm bg-black max-sm:flex-col-reverse">
-      <div>© Copyright 2025.</div>
-      <div>Designed & Developed by 🦍 Artur Pas</div>
-    </div>
-  </footer>
 </main>

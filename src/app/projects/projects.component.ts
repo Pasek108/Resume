@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Project } from '../models/project';
 import projects_data from '../../assets/projects_data.json';
 import { ProjectComponent } from '../modules/project/project.component';
+import { FooterComponent } from '../modules/footer/footer.component';
 
 @Component({
   selector: 'app-projects',
-  imports: [ProjectComponent],
+  imports: [ProjectComponent, FooterComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css',
 })
@@ -13,6 +14,8 @@ export class ProjectsComponent implements OnInit {
   projects_data: Project[] = [];
 
   ngOnInit() {
+    setTimeout(this.scrollToTop, 500);
+
     this.projects_data = projects_data.projects.map((project_data) => {
       let project: Project = {
         name: project_data.name,
@@ -27,5 +30,10 @@ export class ProjectsComponent implements OnInit {
 
       return project;
     });
+  }
+
+  scrollToTop() {
+    const page_top = document?.querySelector('#page-top');
+    page_top?.scrollIntoView({ behavior: 'instant', block: 'start' });
   }
 }
