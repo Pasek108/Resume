@@ -18,7 +18,7 @@
           <h1 class="font-bona text-5xl text-[#ff5722] max-sm:mb-3 max-sm:text-4xl">Welcome</h1>
 
           <div class="border-[#717171] [border-image:linear-gradient(to_top_left,#ff5722,#717171,#ff5722)_10] max-sm:mb-4 sm:my-4 sm:border-l-4 sm:py-1 sm:pl-4">
-            <p class="mb-4 text-justify">
+            <p class="mb-4 text-justify hyphens-auto">
               My name is Artur Pas. I'm a developer based in
               <a class="text-left uppercase underline-offset-2 hover:text-[#ff5722] hover:underline" href="https://maps.app.goo.gl/W6kWWKjGn4EQKEQU6" target="_blank"><i class="fa-solid fa-location-dot"></i> Rzeszów, Poland.</a>
               I'm an aspiring software developer with a strong foundations in programming.
@@ -242,39 +242,50 @@
         <p class="w-[40rem] max-w-full text-center">My self proclaimed skills. I've been programming from 2016 and those are skills I'm comfortable with and eager to learn more.</p>
       </header>
 
-      <div class="relative flex flex-col items-center h-[220vh] gap-20 w-full">
-        <div class="flex items-center justify-center border-2 border-white rounded-full w-14 h-14 hover:border-[#ff5722] transition-colors">
+      <div class="relative flex flex-col items-center w-full gap-20 h-fit">
+        <!-- ------------------ header ------------------ -->
+        <div class="flex h-14 w-14 items-center justify-center rounded-full border-2 border-white transition-colors hover:border-[#ff5722]">
           <i class="flex items-center justify-center w-10 h-10 text-xl border border-white rounded-full fa-solid fa-building-columns"></i>
         </div>
 
-        <div class="flex items-center justify-center absolute top-20 w-1 bg-white h-[200vh] rounded-sm">
+        <!-- ------------------ timeline ------------------ -->
+        <div class="absolute flex items-center justify-center w-1 h-full bg-white rounded-sm top-20">
           <div class="absolute w-4 h-6 bg-white rounded-sm -bottom-1" style="clip-path: polygon(0 50%, 100% 50%, 50% 100%)"></div>
         </div>
 
-        <div class="flex items-start justify-center w-full gap-28">
-          <div class="absolute flex items-center justify-center border-2 border-white rounded-full w-7 h-7 bg-[#212529] hover:border-[#ff5722] transition-colors">
-            <div class="w-2.5 h-2.5 bg-[#ff5722] rounded-full"></div>
+        <!-- ------------------ main event ------------------ -->
+        <div class="relative flex w-full items-start justify-center gap-[4.4rem]">
+          <div class="w-full max-w-96">
+            <div class="relative flex w-full flex-grow flex-col items-end rounded-tr-md border-r border-t border-[#ff5722] px-5 py-3 text-right">
+              <div class="absolute -right-[3.125rem] flex h-7 w-7 items-center justify-center rounded-full border-2 border-white bg-[#212529] transition-colors hover:border-[#ff5722]">
+                <div class="h-2.5 w-2.5 rounded-full bg-[#ff5722]"></div>
+                <div class="absolute right-4 -z-[1] h-px w-8 border-b border-[#ff5722]"></div>
+              </div>
+
+              <h2 class="border-b border-[#ff5722] text-xl font-bold uppercase text-[#ff5722]">Technical High School</h2>
+              <h3 class="font-bold">September 1939 Heroes <br />Technical Schools Complex in Kolbuszowa</h3>
+              <h4>Computer Science - IT Technician</h4>
+              <h5><i class="fa-regular fa-calendar-days"></i> 09.2016 - 06.2020</h5>
+            </div>
           </div>
 
-          <div class="flex flex-col items-end flex-grow w-1/3 text-right">
-            <h2 class="text-xl font-bold uppercase border-b border-[#ff5722] text-[#ff5722]">Technical High School</h2>
-            <h3 class="font-bold">September 1939 Heroes <br>Technical Schools Complex in Kolbuszowa</h3>
-            <h4>Computer Science - IT Technician</h4>
-            <h5><i class="fa-regular fa-calendar-days"></i> 09.2016 - 06.2020</h5>
-          </div>
+          <div class="w-full max-w-96"></div>
+        </div>
 
-          <div class="relative flex-grow w-1/3 px-6 py-4">
-            <div class="absolute top-0 left-0 flex flex-col items-center justify-center">
-              <div class="absolute top-1/2 -mt-[5px] -left-[62px] w-3 h-3 bg-white rounded-full"></div>
+        <!-- ------------------ small event ------------------ -->
+        <div class="-mt-[12.5rem] flex w-full items-start justify-center gap-28">
+          <div class="relative ml-[calc(50%+2.25rem)] w-1/3 flex-grow px-6 py-4">
+            <div class="absolute top-0 left-0 flex flex-col items-center justify-center h-full">
+              <div class="absolute -left-[42px] top-1/2 -mt-[5px] h-3 w-3 rounded-full bg-white"></div>
 
-              <div class="w-6 h-20 -mr-[20px] -mb-2 border-t-4 border-l-4 rounded-tl-2xl "></div>
-              <div class="w-4 h-8 -ml-[12px] -mt-2 border-b-4 border-r-4 rounded-br-2xl -mb-0.5"></div>
-              <div class="w-4 h-8 -ml-[12px] -mb-2 border-t-4 border-r-4 rounded-tr-2xl -mt-0.5"></div>
-              <div class="w-6 h-20 -mr-[20px] -mt-2 border-b-4 border-l-4 rounded-bl-2xl"></div>
+              <div class="-mr-[20px] h-1/2 w-6 rounded-tl-2xl border-l-4 border-t-4"></div>
+              <div class="-mb-0.5 -ml-[12px] -mt-2 h-8 w-4 rounded-br-2xl border-b-4 border-r-4"></div>
+              <div class="-mb-2 -ml-[12px] -mt-0.5 h-8 w-4 rounded-tr-2xl border-r-4 border-t-4"></div>
+              <div class="-mr-[20px] h-1/2 w-6 rounded-bl-2xl border-b-4 border-l-4"></div>
             </div>
 
             <h4 class="mb-1 font-bold">What I've learned?</h4>
-            <ul class="ml-5">
+            <ul class="ml-5 text-justify max-w-96 hyphens-auto">
               <li class="list-disc">Creating web pages (HTML, CSS, JS, PHP)</li>
               <li class="list-disc">Managing MySQL database</li>
               <li class="list-disc">Network administration</li>
@@ -282,7 +293,181 @@
               <li class="list-disc">Computer architecture and operation</li>
             </ul>
           </div>
+        </div>
 
+        <!-- ------------------ small event ------------------ -->
+        <div class="-mt-[6.5rem] flex w-full items-start justify-center gap-28">
+          <div class="relative mr-[calc(50%+2.25rem)] flex w-1/3 flex-grow justify-end px-6 py-4 text-right">
+            <div class="absolute top-0 right-0 flex flex-col items-center justify-center h-full -scale-x-100">
+              <div class="absolute -left-[42px] top-1/2 -mt-[5px] h-3 w-3 rounded-full bg-white"></div>
+
+              <div class="-mr-[20px] h-1/2 w-6 rounded-tl-2xl border-l-4 border-t-4"></div>
+              <div class="-mb-0.5 -ml-[12px] -mt-2 h-8 w-4 rounded-br-2xl border-b-4 border-r-4"></div>
+              <div class="-mb-2 -ml-[12px] -mt-0.5 h-8 w-4 rounded-tr-2xl border-r-4 border-t-4"></div>
+              <div class="-mr-[20px] h-1/2 w-6 rounded-bl-2xl border-b-4 border-l-4"></div>
+            </div>
+
+            <p class="text-justify max-w-96 hyphens-auto">High school was a great time. I learned the basics of computer science, made friends, played games, and started going to the gym. However, it was not very challenging, so I had to gradually develop my programming skills on my own.</p>
+          </div>
+        </div>
+
+        <!-- ------------------ small event ------------------ -->
+        <div class="-mt-[10.4rem] flex w-full items-start justify-center gap-28">
+          <div class="relative ml-[calc(50%+2.25rem)] w-1/3 flex-grow px-6 py-4">
+            <div class="absolute top-0 left-0 flex flex-col items-center justify-center h-full">
+              <div class="absolute -left-[42px] top-1/2 -mt-[5px] h-3 w-3 rounded-full bg-white"></div>
+
+              <div class="-mr-[20px] h-1/2 w-6 rounded-tl-2xl border-l-4 border-t-4"></div>
+              <div class="-mb-0.5 -ml-[12px] -mt-2 h-8 w-4 rounded-br-2xl border-b-4 border-r-4"></div>
+              <div class="-mb-2 -ml-[12px] -mt-0.5 h-8 w-4 rounded-tr-2xl border-r-4 border-t-4"></div>
+              <div class="-mr-[20px] h-1/2 w-6 rounded-bl-2xl border-b-4 border-l-4"></div>
+            </div>
+
+            <h4 class="mb-1 font-bold">Certificates earned</h4>
+            <ul class="ml-5 text-justify max-w-96 hyphens-auto">
+              <li class="mb-1 leading-5 list-disc"><span class="font-bold">E.12</span> - Assembly and maintenance of personal computers and peripheral devices</li>
+              <li class="mb-1 leading-5 list-disc"><span class="font-bold">E.13</span> - Designing local computer networks and network administration</li>
+              <li class="mb-1 leading-5 list-disc"><span class="font-bold">E.14</span> - Creating web applications and databases and database administration</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ------------------ main event ------------------ -->
+        <div class="relative flex w-full items-start justify-center gap-[4.4rem]">
+          <div class="w-full max-w-96"></div>
+
+          <div class="w-full max-w-96">
+            <div class="relative flex w-full flex-grow flex-col items-start rounded-tl-md border-l border-t border-[#ff5722] px-5 py-3">
+              <div class="absolute -left-[3.125rem] flex h-7 w-7 items-center justify-center rounded-full border-2 border-white bg-[#212529] transition-colors hover:border-[#ff5722]">
+                <div class="h-2.5 w-2.5 rounded-full bg-[#ff5722]"></div>
+                <div class="absolute left-4 -z-[1] h-px w-8 border-b border-[#ff5722]"></div>
+              </div>
+
+              <h2 class="border-b border-[#ff5722] text-xl font-bold uppercase text-[#ff5722]">University of Technology</h2>
+              <h3 class="font-bold">Ignacy Łukasiewicz's <br />Rzeszów University of Technology</h3>
+              <h4>Computer Science - Engineer</h4>
+              <h5><i class="fa-regular fa-calendar-days"></i> 10.2020 - 03.2021</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- ------------------ small event ------------------ -->
+        <div class="-mt-[12.5rem] flex w-full items-start justify-center gap-28">
+          <div class="relative flex justify-end flex-grow w-1/3 px-6 py-4 text-right">
+            <div class="absolute top-0 right-0 flex flex-col items-center justify-center h-full -scale-x-100">
+              <div class="absolute -left-[42px] top-1/2 -mt-[5px] h-3 w-3 rounded-full bg-white"></div>
+
+              <div class="-mr-[20px] h-1/2 w-6 rounded-tl-2xl border-l-4 border-t-4"></div>
+              <div class="-mb-0.5 -ml-[12px] -mt-2 h-8 w-4 rounded-br-2xl border-b-4 border-r-4"></div>
+              <div class="-mb-2 -ml-[12px] -mt-0.5 h-8 w-4 rounded-tr-2xl border-r-4 border-t-4"></div>
+              <div class="-mr-[20px] h-1/2 w-6 rounded-bl-2xl border-b-4 border-l-4"></div>
+            </div>
+
+            <p class="text-justify max-w-96 hyphens-auto">This time wasn't so great. Because of the COVID-19 pandemic, I was basically stuck at home. E-learning in Poland was crawling, and there was a massive leap in the requirements for math and physics. All these factors led to my <span class="text-red-600">failure</span>. We all stumble sometimes, nobody is perfect.</p>
+          </div>
+
+          <div class="flex-grow w-1/3 -ml-10"></div>
+        </div>
+
+        <!-- ------------------ small event ------------------ -->
+        <div class="-mt-[6.1rem] flex w-full items-start justify-center gap-28">
+          <div class="flex-grow w-1/3"></div>
+
+          <div class="relative flex-grow w-1/3 px-6 py-4 -ml-10">
+            <div class="absolute top-0 left-0 flex flex-col items-center justify-center h-full">
+              <div class="absolute -left-[42px] top-1/2 -mt-[5px] h-3 w-3 rounded-full bg-white"></div>
+
+              <div class="-mr-[20px] h-1/2 w-6 rounded-tl-2xl border-l-4 border-t-4"></div>
+              <div class="-mb-0.5 -ml-[12px] -mt-2 h-8 w-4 rounded-br-2xl border-b-4 border-r-4"></div>
+              <div class="-mb-2 -ml-[12px] -mt-0.5 h-8 w-4 rounded-tr-2xl border-r-4 border-t-4"></div>
+              <div class="-mr-[20px] h-1/2 w-6 rounded-bl-2xl border-b-4 border-l-4"></div>
+            </div>
+
+            <h4 class="mb-1 font-bold">What I've learned?</h4>
+            <ul class="ml-5 text-justify max-w-96 hyphens-auto">
+              <li class="list-disc">Basics of C</li>
+              <li class="list-disc">Basics of Python</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ------------------ main event ------------------ -->
+        <div class="relative flex w-full items-start justify-center gap-[4.4rem]">
+          <div class="w-full max-w-96">
+            <div class="relative flex w-full flex-grow flex-col items-end rounded-tr-md border-r border-t border-[#ff5722] px-5 py-3 text-right">
+              <div class="absolute -right-[3.125rem] flex h-7 w-7 items-center justify-center rounded-full border-2 border-white bg-[#212529] transition-colors hover:border-[#ff5722]">
+                <div class="h-2.5 w-2.5 rounded-full bg-[#ff5722]"></div>
+                <div class="absolute right-4 -z-[1] h-px w-8 border-b border-[#ff5722]"></div>
+              </div>
+
+              <h2 class="border-b border-[#ff5722] text-xl font-bold uppercase text-[#ff5722]">Technical High School</h2>
+              <h3 class="font-bold">September 1939 Heroes <br />Technical Schools Complex in Kolbuszowa</h3>
+              <h4>Computer Science - IT Technician</h4>
+              <h5><i class="fa-regular fa-calendar-days"></i> 09.2016 - 06.2020</h5>
+            </div>
+          </div>
+
+          <div class="w-full max-w-96"></div>
+        </div>
+
+        <!-- ------------------ small event ------------------ -->
+        <div class="-mt-[12.5rem] flex w-full items-start justify-center gap-28">
+          <div class="relative ml-[calc(50%+2.25rem)] w-1/3 flex-grow px-6 py-4">
+            <div class="absolute top-0 left-0 flex flex-col items-center justify-center h-full">
+              <div class="absolute -left-[42px] top-1/2 -mt-[5px] h-3 w-3 rounded-full bg-white"></div>
+
+              <div class="-mr-[20px] h-1/2 w-6 rounded-tl-2xl border-l-4 border-t-4"></div>
+              <div class="-mb-0.5 -ml-[12px] -mt-2 h-8 w-4 rounded-br-2xl border-b-4 border-r-4"></div>
+              <div class="-mb-2 -ml-[12px] -mt-0.5 h-8 w-4 rounded-tr-2xl border-r-4 border-t-4"></div>
+              <div class="-mr-[20px] h-1/2 w-6 rounded-bl-2xl border-b-4 border-l-4"></div>
+            </div>
+
+            <h4 class="mb-1 font-bold">What I've learned?</h4>
+            <ul class="ml-5 text-justify max-w-96 hyphens-auto">
+              <li class="list-disc">Creating web pages (HTML, CSS, JS, PHP)</li>
+              <li class="list-disc">Managing MySQL database</li>
+              <li class="list-disc">Network administration</li>
+              <li class="list-disc">Administering operating systems</li>
+              <li class="list-disc">Computer architecture and operation</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ------------------ small event ------------------ -->
+        <div class="-mt-[6.5rem] flex w-full items-start justify-center gap-28">
+          <div class="relative mr-[calc(50%+2.25rem)] flex w-1/3 flex-grow justify-end px-6 py-4 text-right">
+            <div class="absolute top-0 right-0 flex flex-col items-center justify-center h-full -scale-x-100">
+              <div class="absolute -left-[42px] top-1/2 -mt-[5px] h-3 w-3 rounded-full bg-white"></div>
+
+              <div class="-mr-[20px] h-1/2 w-6 rounded-tl-2xl border-l-4 border-t-4"></div>
+              <div class="-mb-0.5 -ml-[12px] -mt-2 h-8 w-4 rounded-br-2xl border-b-4 border-r-4"></div>
+              <div class="-mb-2 -ml-[12px] -mt-0.5 h-8 w-4 rounded-tr-2xl border-r-4 border-t-4"></div>
+              <div class="-mr-[20px] h-1/2 w-6 rounded-bl-2xl border-b-4 border-l-4"></div>
+            </div>
+
+            <p class="text-justify max-w-96 hyphens-auto">High school was a great time. I learned the basics of computer science, made friends, played games, and started going to the gym. However, it was not very challenging, so I had to gradually develop my programming skills on my own.</p>
+          </div>
+        </div>
+
+        <!-- ------------------ small event ------------------ -->
+        <div class="-mt-[10.4rem] flex w-full items-start justify-center gap-28">
+          <div class="relative ml-[calc(50%+2.25rem)] w-1/3 flex-grow px-6 py-4">
+            <div class="absolute top-0 left-0 flex flex-col items-center justify-center h-full">
+              <div class="absolute -left-[42px] top-1/2 -mt-[5px] h-3 w-3 rounded-full bg-white"></div>
+
+              <div class="-mr-[20px] h-1/2 w-6 rounded-tl-2xl border-l-4 border-t-4"></div>
+              <div class="-mb-0.5 -ml-[12px] -mt-2 h-8 w-4 rounded-br-2xl border-b-4 border-r-4"></div>
+              <div class="-mb-2 -ml-[12px] -mt-0.5 h-8 w-4 rounded-tr-2xl border-r-4 border-t-4"></div>
+              <div class="-mr-[20px] h-1/2 w-6 rounded-bl-2xl border-b-4 border-l-4"></div>
+            </div>
+
+            <h4 class="mb-1 font-bold">Certificates earned</h4>
+            <ul class="ml-5 text-justify max-w-96 hyphens-auto">
+              <li class="mb-1 leading-5 list-disc"><span class="font-bold">E.12</span> - Assembly and maintenance of personal computers and peripheral devices</li>
+              <li class="mb-1 leading-5 list-disc"><span class="font-bold">E.13</span> - Designing local computer networks and network administration</li>
+              <li class="mb-1 leading-5 list-disc"><span class="font-bold">E.14</span> - Creating web applications and databases and database administration</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
