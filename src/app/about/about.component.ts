@@ -15,12 +15,13 @@ export class AboutComponent implements OnInit {
   mouse_y = 0;
   scroll_x = 0;
   scroll_y = 0;
+  show_more_skills = false;
 
   ngOnInit(): void {
     setTimeout(this.scrollToTop, 500);
 
     const main_container = document?.querySelector('#main-container');
-    main_container?.addEventListener("scroll", this.onScroll.bind(this));
+    main_container?.addEventListener('scroll', this.onScroll.bind(this));
   }
 
   scrollToTop() {
@@ -46,5 +47,15 @@ export class AboutComponent implements OnInit {
   updateBackground() {
     this.bg_x = this.mouse_x + this.scroll_x;
     this.bg_y = this.mouse_y + this.scroll_y - 80;
+  }
+
+  showMoreSkills() {
+    this.show_more_skills = true;
+    this.scrollToSkills();
+  }
+
+  scrollToSkills() {
+    const skills_section = document?.querySelector('#skills-section');
+    skills_section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }
