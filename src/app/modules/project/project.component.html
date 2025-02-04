@@ -9,16 +9,18 @@
       <div class=""><span class="font-bold">Group:</span> {{ project.group }}</div>
     </div>
 
-    <div class="my-2">
-      <p>{{ project.description }}</p>
-
-      <div class="flex flex-row flex-wrap gap-2 mt-3 text-xs">
+    <div class="mb-2">
+      <div class="flex flex-row flex-wrap gap-2 mb-5 text-xs">
         @for (skill of project.skills; track $index) {
           <div class="flex items-center justify-center p-1 px-3 font-bold uppercase rounded-md bg-slate-600 text-slate-100">
             {{ skill }}
           </div>
         }
       </div>
+
+      <p>{{ project.description }}</p>
+
+
     </div>
 
     <div class="flex gap-2">

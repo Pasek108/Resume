@@ -51,14 +51,60 @@
     "LESS",
     "SCSS",
     "SASS",
-    "SPARQL"
+    "SPARQL",
+    "SocketIO"
   ],
   "projects": [
     {
+      "name": "TicTacToe",
+      "images": [
+        "images/TicTacToe/main-menu.png",
+        "images/TicTacToe/multiplayer-lobby.png",
+        "images/TicTacToe/win-movable.png",
+        "images/TicTacToe/movable.png",
+        "images/TicTacToe/one-mark.png"
+      ],
+      "description": "Three tic-tac-toe versions in two modes, vs AI, vs player locally and multiplayer in real-time.",
+      "live_version": "https://tic-tac-toe-alqu.onrender.com/",
+      "github_repo": "https://github.com/Pasek108/TicTacToe",
+      "skills": [2, 4, 42, 45, 34, 0],
+      "group": 0,
+      "hidden": false
+    },
+    {
+      "name": "GoblinSlayer",
+      "images": [
+        "images/GoblinSlayer/main-menu.png",
+        "images/GoblinSlayer/achievements.png",
+        "images/GoblinSlayer/game.png",
+        "images/GoblinSlayer/game-over.png"
+      ],
+      "description": "Arcade game where player have to survive increasing waves of goblins in one attempt.",
+      "live_version": "https://pasek108.github.io/GoblinSlayer/",
+      "github_repo": "https://github.com/Pasek108/GoblinSlayer",
+      "skills": [2, 42, 0],
+      "group": 0,
+      "hidden": false
+    },
+    {
+      "name": "UR-MatchstickEquations",
+      "images": [
+        "images/UR-MatchstickEquations/wokwi.png",
+        "images/UR-MatchstickEquations/console.png",
+        "images/UR-MatchstickEquations/circuit.png"
+      ],
+      "description": "Project from my studies at University of Rzeszów (UR). Matchstick puzzle equations on Arduino and console.",
+      "live_version": "https://github.com/Pasek108/UR-MatchstickEquations",
+      "github_repo": "https://github.com/Pasek108/UR-MatchstickEquations",
+      "skills": [40, 6, 8, 2, 10],
+      "group": 3,
+      "hidden": false
+    },
+    {
       "name": "BeFunge93Interpreter",
       "images": [
-        "images/BeFunge93Interpreter/program_running.png",
         "images/BeFunge93Interpreter/nyan_cat.png",
+        "images/BeFunge93Interpreter/program_running.png",
         "images/BeFunge93Interpreter/contact.png"
       ],
       "description": "BeFunge 93 interpreter with grid visualisation, debugging tools and nyan cats animations.",
@@ -69,23 +115,10 @@
       "hidden": false
     },
     {
-      "name": "UR-MatchstickEquations",
-      "images": [
-        "https://github.com/Pasek108/UR-MatchstickEquations/blob/main/_for_readme/Arduino/real_circuit.png?raw=true",
-        "https://github.com/Pasek108/UR-MatchstickEquations/blob/main/_for_readme/Arduino/wokwi.png?raw=true",
-        "https://github.com/Pasek108/UR-MatchstickEquations/blob/main/_for_readme/Console/console_preview.png?raw=true"
-      ],
-      "description": "Fixes and improvements for the phpMyAdmin designer to enhance its usability.",
-      "live_version": "",
-      "github_repo": "https://github.com/Pasek108/UR-MatchstickEquations",
-      "skills": [40, 6, 8, 2, 10],
-      "group": 3,
-      "hidden": false
-    },
-    {
       "name": "UR-LoldleSolver",
       "images": [
-        "https://github.com/Pasek108/UR-LoldleSolver/blob/main/_for_readme/UI/main_screen.png?raw=true"
+        "images/UR-LoldleSolver/generator.png",
+        "images/UR-LoldleSolver/fluent-editor.png"
       ],
       "description": "Solving Loldle game using knowledge base and generated SPARQL queries in Fluent Editor.",
       "live_version": "",
@@ -96,7 +129,9 @@
     },
     {
       "name": "PMA-BetterDesigner",
-      "images": ["images/PMA-BetterDesigner.png"],
+      "images": [
+        "images/PMA-BetterDesigner/designer.png"
+      ],
       "description": "Fixes and improvements for the phpMyAdmin designer to enhance its usability.",
       "live_version": "",
       "github_repo": "https://github.com/Pasek108/PMA-BetterDesigner",

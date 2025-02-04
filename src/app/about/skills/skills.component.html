@@ -7,7 +7,7 @@
   <p class="w-[40rem] max-w-full text-center">My self-proclaimed skills. I've been programming since 2016, and these are the skills I'm comfortable with and eager to improve.</p>
 </header>
 
-<div observeVisibility [threshold]="0.5" class="flex flex-wrap w-full">
+<div observeVisibility class="flex flex-wrap w-full">
   <div class="flex flex-wrap flex-grow w-1/2 max-lg:w-full">
     <div class="flex-grow w-1/2 p-6 max-sm:w-full">
       <h3 class="flex items-center justify-between gap-4 border-b border-[#ff5722] pb-2 text-lg">
@@ -158,7 +158,7 @@
 </div>
 
 @if (!show_more_skills) {
-  <button observeVisibility [threshold]="0.5" (click)="showMoreSkills()" class="mt-10 block w-fit cursor-pointer rounded-md border border-white p-2 px-4 text-lg transition-colors duration-300 hover:bg-[#ff5622c1]">
+  <button observeVisibility (click)="showMoreSkills()" class="mt-10 block w-fit cursor-pointer rounded-md border border-white p-2 px-4 text-lg transition-colors duration-300 hover:bg-[#ff5622c1]">
     <i class="mr-2 fa-solid fa-plus"></i>
     Show More Skills
   </button>

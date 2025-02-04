@@ -15,7 +15,7 @@ export class SelectedProjectsComponent {
   projects_data: Project[] = [];
 
   constructor() {
-    this.projects_data = projects_data.projects.map((project_data) => {
+    this.projects_data = projects_data.projects.slice(0, 4).map((project_data) => {
       let project: Project = {
         name: project_data.name,
         images: project_data.images,

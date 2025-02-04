@@ -4,18 +4,18 @@
     <div class="my-3 h-1 w-20 rounded-sm bg-[#ff5722]"></div>
   </div>
 
-  <p class="w-[40rem] max-w-full text-center">Just my professional career. About as miserable as my interactions with women.</p>
+  <p class="w-[40rem] max-w-full text-center">Practical applications of my skills. From small prototypes to complete applications, these projects showcase my growth and problem-solving approach.</p>
 </header>
 
 <div observeVisibility class="flex flex-row flex-wrap w-full gap-8 max-lg:gap-4 max-md:gap-8">
   @for (project_data of projects_data; track $index) {
-    <div observeVisibility class="group flex w-5/12 max-w-full flex-grow flex-col overflow-hidden rounded-lg border border-[#71717180] max-md:w-full">
-      <div class="border-b-1 border-black relative flex aspect-video h-fit w-full items-center justify-center overflow-hidden bg-[#00000020] transition-colors duration-300 group-hover:bg-[#000000A0]">
-        <a href="{{ project_data.github_repo }}" target="_blank" class="flex cursor-pointer items-center justify-center gap-2 rounded-lg border-2 border-white p-2 px-6 font-bold text-white opacity-0 transition-all duration-300 hover:border-[#ff5722] hover:bg-[#212529E0] group-hover:opacity-100"> <i class="-my-1 text-xl fa-brands fa-github"></i> GitHub </a>
+    <div observeVisibility class="flex flex-col flex-grow w-5/12 max-w-full overflow-hidden group max-md:w-full">
+      <div class=" rounded-lg border border-[#717171] relative flex aspect-video h-fit w-full items-center justify-center overflow-hidden bg-[#00000010] transition-colors duration-300 group-hover:bg-[#00000080] max-md:bg-[#00000080]">
+        <a href="{{ project_data.github_repo }}" target="_blank" class="flex cursor-pointer items-center justify-center gap-2 rounded-lg border-2 border-white p-2 px-6 font-bold text-white opacity-0 transition-all duration-300 hover:border-[#ff5722] hover:bg-[#212529E0] group-hover:opacity-100 max-md:opacity-100"> <i class="-my-1 text-xl fa-brands fa-github"></i> GitHub </a>
         <img ngSrc="{{ project_data.images[0] }}" fill alt="project image" class="absolute left-0 top-0 -z-[1] min-h-full w-full transition-transform duration-300 group-hover:scale-110" priority />
       </div>
 
-      <div class="flex-grow border-t-4 border-[#ff5722] bg-[#212529] p-4">
+      <div class="flex-grow p-4 rounded-lg ">
         <header class="flex flex-col">
           <a class="w-fit text-xl font-bold text-[#ff5722] underline-offset-2 hover:underline" href="{{ project_data.live_version }}" target="_blank">{{ project_data.name }} <i class="fa-solid fa-up-right-from-square"></i></a>
 
@@ -36,4 +36,4 @@
   }
 </div>
 
-<a observeVisibility [threshold]="0.5" routerLink="/projects" class="mt-10 block w-fit cursor-pointer rounded-md border border-white p-2 px-4 text-lg transition-colors duration-300 hover:bg-[#ff5622c1]"> <i class="mr-2 fa-regular fa-folder-open"></i> See All Projects </a>
+<a observeVisibility routerLink="/projects" class="mt-10 block w-fit cursor-pointer rounded-md border border-white p-2 px-4 text-lg transition-colors duration-300 hover:bg-[#ff5622c1]"> <i class="mr-2 fa-regular fa-folder-open"></i> See All Projects </a>

@@ -17,9 +17,9 @@ export class ObserveVisibilityDirective implements OnDestroy, OnInit, AfterViewI
   // animation easing
   @Input() easing: '' | 'ease' | 'ease-in' | 'ease-out' | 'ease-in-out' = '';
   // what percentage should be visible before triggering
-  @Input() threshold: number = 0.12;
+  @Input() threshold: number = 0;
   // root margin
-  @Input() rootMargin: string = '0px';
+  @Input() rootMargin: string = '-20% 0% -20% 0%';
 
   // emit event when element enters intersects
   @Output() intersection = new EventEmitter<ElementRef>();
