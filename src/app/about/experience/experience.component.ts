@@ -8,8 +8,5 @@ import { ObserveVisibilityDirective } from '../../../directives/visibility.direc
   styleUrl: './experience.component.css'
 })
 export class ExperienceComponent {
-  scrollToExperience() {
-    const experience_section = document?.querySelector('#experience-section');
-    experience_section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
+
 }

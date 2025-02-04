@@ -1,15 +1,17 @@
 import { NgStyle } from '@angular/common';
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FooterComponent } from '../modules/footer/footer.component';
 import { IntroComponent } from './intro/intro.component';
 import { SkillsComponent } from './skills/skills.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ObserveVisibilityDirective } from '../../directives/visibility.directive';
+import { WhatIDoComponent } from './what-i-do/what-i-do.component';
+import { SelectedProjectsComponent } from './selected-projects/selected-projects.component';
 
 @Component({
   selector: 'app-about',
-  imports: [NgStyle, FooterComponent, IntroComponent, SkillsComponent, EducationComponent, ExperienceComponent, ObserveVisibilityDirective],
+  imports: [NgStyle, ObserveVisibilityDirective, FooterComponent, IntroComponent, SkillsComponent, EducationComponent, ExperienceComponent, WhatIDoComponent, SelectedProjectsComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })

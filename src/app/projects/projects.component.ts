@@ -13,9 +13,7 @@ import { FooterComponent } from '../modules/footer/footer.component';
 export class ProjectsComponent implements OnInit {
   projects_data: Project[] = [];
 
-  ngOnInit() {
-    setTimeout(this.scrollToTop, 500);
-
+  constructor() {
     this.projects_data = projects_data.projects.map((project_data) => {
       let project: Project = {
         name: project_data.name,
@@ -30,6 +28,10 @@ export class ProjectsComponent implements OnInit {
 
       return project;
     });
+  }
+
+  ngOnInit() {
+    setTimeout(this.scrollToTop, 500);
   }
 
   scrollToTop() {

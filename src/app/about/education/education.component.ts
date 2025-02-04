@@ -8,8 +8,5 @@ import { ObserveVisibilityDirective } from '../../../directives/visibility.direc
   styleUrl: './education.component.css',
 })
 export class EducationComponent {
-  scrollToEducation() {
-    const education_section = document?.querySelector('#education-section');
-    education_section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
+
 }

@@ -16,7 +16,7 @@
       </svg>
     </div>
 
-    <div class="flex max-w-[80rem] flex-col gap-8 max-sm:max-w-full py-8 -mt-1">
+    <div class="-mt-1 flex max-w-[80rem] flex-col gap-8 py-8 max-sm:max-w-full">
       @for (project_data of projects_data; track $index) {
         @if (!project_data.hidden) {
           <app-project [project]="project_data" [id]="$index"></app-project>

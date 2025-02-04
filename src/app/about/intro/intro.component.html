@@ -6,7 +6,7 @@
   <div class="h-52 w-52 border-[0.75rem] [border-image:linear-gradient(to_top_left,#ff5722,#717171,#ff5722)_10]"></div>
 </div>
 
-<div class="flex flex-wrap gap-16 p-20 gap-y-8 max-md:p-14 max-sm:p-8">
+<div class="flex flex-wrap gap-20 p-20 gap-y-8 max-md:p-14 max-sm:p-8">
   <div class="flex-grow w-3/5 max-lg:w-full">
     <h1 class="font-bona text-5xl text-[#ff5722] max-sm:mb-3 max-sm:text-4xl">Welcome</h1>
 
@@ -32,11 +32,11 @@
     </div>
 
     <ul class="relative z-10 p-8 text-lg">
-      <li class="flex items-center gap-2 cursor-pointer group">
+      <li (click)="scrollToWhatIDo()" class="flex items-center gap-2 cursor-pointer group">
         <div class="w-1 h-1 transition-all bg-white rounded-full group-hover:w-8"></div>
         What I Do
       </li>
-      <li class="flex items-center gap-2 cursor-pointer group">
+      <li (click)="scrollToSelectedProjects()" class="flex items-center gap-2 cursor-pointer group">
         <div class="w-1 h-1 transition-all bg-white rounded-full group-hover:w-8"></div>
         Projects
       </li>
@@ -54,4 +54,24 @@
       </li>
     </ul>
   </div>
+
+  <ul class="absolute bottom-[1.125rem] right-[1.125rem] flex gap-1.5 max-sm:flex-col">
+    <li class="flex items-center justify-center w-12 h-12 text-2xl rounded-sm">
+      <a class="flex h-full w-full items-center justify-center rounded-sm border bg-transparent text-[#f8f9fa] transition-all duration-150 hover:scale-110 hover:bg-[#fafbfc] hover:text-[#212529]" href="https://github.com/Pasek108" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </li>
+
+    <li class="flex items-center justify-center w-12 h-12 text-2xl rounded-sm">
+      <a class="flex h-full w-full items-center justify-center rounded-sm border bg-transparent text-[#f8f9fa] transition-all duration-150 hover:scale-110 hover:bg-[#fff] hover:text-[#000]" href="https://codepen.io/Pasek108" target="_blank">
+        <i class="fa-brands fa-codepen"></i>
+      </a>
+    </li>
+
+    <li class="flex items-center justify-center w-12 h-12 text-2xl rounded-sm">
+      <a class="flex h-full w-full items-center justify-center rounded-sm border bg-transparent text-[#f8f9fa] transition-all duration-150 hover:scale-110 hover:bg-[#0077B5] hover:text-[#fff]" href="https://www.linkedin.com/in/artur-pas/" target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+    </li>
+  </ul>
 </div>
