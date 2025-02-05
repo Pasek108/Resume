@@ -10,14 +10,19 @@
 <div observeVisibility class="flex flex-row flex-wrap w-full gap-8 max-lg:gap-4 max-md:gap-8">
   @for (project_data of projects_data; track $index) {
     <div observeVisibility class="flex flex-col flex-grow w-5/12 max-w-full overflow-hidden group max-md:w-full">
-      <div class=" rounded-lg border border-[#717171] relative flex aspect-video h-fit w-full items-center justify-center overflow-hidden bg-[#00000010] transition-colors duration-300 group-hover:bg-[#00000080] max-md:bg-[#00000080]">
+      <div class="relative flex aspect-video h-fit w-full items-center justify-center overflow-hidden rounded-lg border border-[#717171] bg-[#00000010] transition-colors duration-300 group-hover:bg-[#00000080] max-md:bg-[#00000080]">
         <a href="{{ project_data.github_repo }}" target="_blank" class="flex cursor-pointer items-center justify-center gap-2 rounded-lg border-2 border-white p-2 px-6 font-bold text-white opacity-0 transition-all duration-300 hover:border-[#ff5722] hover:bg-[#212529E0] group-hover:opacity-100 max-md:opacity-100"> <i class="-my-1 text-xl fa-brands fa-github"></i> GitHub </a>
         <img ngSrc="{{ project_data.images[0] }}" fill alt="project image" class="absolute left-0 top-0 -z-[1] min-h-full w-full transition-transform duration-300 group-hover:scale-110" priority />
       </div>
 
-      <div class="flex-grow p-4 rounded-lg ">
+      <div class="flex-grow p-4 rounded-lg">
         <header class="flex flex-col">
-          <a class="w-fit text-xl font-bold text-[#ff5722] underline-offset-2 hover:underline" href="{{ project_data.live_version }}" target="_blank">{{ project_data.name }} <i class="fa-solid fa-up-right-from-square"></i></a>
+          <a class="w-fit text-xl font-bold text-[#ff5722] underline-offset-2 hover:underline" target="_blank" [attr.href]="project_data.live_version.length > 0 ? project_data.live_version : null" [class.hover:underline]="project_data.live_version.length > 0">
+            {{ project_data.name }}
+            @if (project_data.live_version.length > 0) {
+              <i class="fa-solid fa-up-right-from-square"></i>
+            }
+          </a>
 
           <div class="flex flex-row flex-wrap gap-2 mt-3 text-xs">
             @for (skill of project_data.skills; track $index) {

@@ -19,12 +19,12 @@
       </div>
 
       <p>{{ project.description }}</p>
-
-
     </div>
 
     <div class="flex gap-2">
-      <a href="{{ project.live_version }}" target="_blank" class="flex items-center justify-center gap-2 p-2 px-4 font-bold text-white bg-blue-800 border border-black rounded-lg cursor-pointer hover:bg-blue-900"><i class="fa-solid fa-up-right-from-square"></i> Live version</a>
+      @if (project.live_version.length > 0) {
+        <a href="{{ project.live_version }}" target="_blank" class="flex items-center justify-center gap-2 p-2 px-4 font-bold text-white bg-blue-800 border border-black rounded-lg cursor-pointer hover:bg-blue-900"><i class="fa-solid fa-up-right-from-square"></i> Live version</a>
+      }
       <a href="{{ project.github_repo }}" target="_blank" class="flex items-center justify-center gap-2 p-2 px-4 font-bold text-black bg-white border border-black rounded-lg cursor-pointer hover:bg-gray-200"><i class="-my-1 text-xl fa-brands fa-github"></i> GitHub</a>
     </div>
   </div>

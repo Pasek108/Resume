@@ -94,7 +94,7 @@
         "images/UR-MatchstickEquations/circuit.png"
       ],
       "description": "Project from my studies at University of Rzeszów (UR). Matchstick puzzle equations on Arduino and console.",
-      "live_version": "https://github.com/Pasek108/UR-MatchstickEquations",
+      "live_version": "",
       "github_repo": "https://github.com/Pasek108/UR-MatchstickEquations",
       "skills": [40, 6, 8, 2, 10],
       "group": 3,

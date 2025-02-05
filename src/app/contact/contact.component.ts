@@ -2,10 +2,11 @@ import { NgOptimizedImage } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FooterComponent } from '../modules/footer/footer.component';
 import { ObserveVisibilityDirective } from '../../directives/visibility.directive';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
-  imports: [NgOptimizedImage, FooterComponent, ObserveVisibilityDirective],
+  imports: [NgOptimizedImage, FooterComponent, ObserveVisibilityDirective, RouterModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css',
 })
