@@ -1,4 +1,4 @@
-<header class="relative z-50 flex h-20 w-full justify-center border-b border-[#717171] bg-[] bg-no-repeat px-8 py-4 max-sm:p-4" style="background: radial-gradient(circle at 0, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.5) 100%) #212529">
+<header class="relative z-50 flex h-20 w-full justify-center border-b border-[#717171 bg-no-repeat px-8 py-4 max-sm:p-4" style="background: radial-gradient(circle at 0, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.5) 100%) #212529">
   <div class="flex items-center justify-between w-full max-w-screen-xl gap-16">
     <div class="-mt-[5px] flex flex-col">
       <div class="text-3xl font-bold text-[#ff5722]">Artur Pas</div>
@@ -13,7 +13,7 @@
       }
     </div>
 
-    <nav [style.display]="menu_hidden ? 'none' : null" class="right-0 top-20 z-50 flex cursor-pointer items-center justify-end gap-8 font-bold uppercase max-sm:absolute max-sm:h-[calc(100vh-5rem)] max-sm:flex-col max-sm:justify-center max-sm:gap-0 max-sm:bg-[#111315] max-sm:px-20 max-sm:py-4 max-sm:text-2xl">
+    <nav [style.display]="menu_hidden ? 'none' : null" class="right-0 top-20 z-50 flex cursor-pointer items-center justify-end gap-8 font-bold uppercase max-sm:absolute max-sm:h-[calc(100dvh-5rem)] max-sm:flex-col max-sm:justify-center max-sm:gap-0 max-sm:bg-[#111315] max-sm:px-20 max-sm:py-4 max-sm:text-2xl">
       <a (click)="toggleMenu()" routerLink="about" routerLinkActive="active" #aboutLinkActiveRef="routerLinkActive" (click)="scrollToTop(aboutLinkActiveRef.isActive)" class="group px-1 transition duration-300 max-sm:w-full max-sm:p-4 max-sm:text-center [&.active_div]:max-w-full">
         About
         <div class="h-0.5 max-w-0 bg-[#ff5722] transition-all duration-500 group-hover:max-w-full max-sm:mb-1"></div>
