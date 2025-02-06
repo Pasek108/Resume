@@ -17,12 +17,11 @@
 
       <div class="flex-grow p-4 rounded-lg">
         <header class="flex flex-col">
-          <a class="w-fit text-xl font-bold text-[#ff5722] underline-offset-2 hover:underline" target="_blank" [attr.href]="project_data.live_version.length > 0 ? project_data.live_version : null" [class.hover:underline]="project_data.live_version.length > 0">
-            {{ project_data.name }}
-            @if (project_data.live_version.length > 0) {
-              <i class="fa-solid fa-up-right-from-square"></i>
-            }
-          </a>
+          @if (project_data.live_version.length > 0) {
+            <a class="w-fit text-xl font-bold text-[#ff5722] underline-offset-2 hover:underline" target="_blank" href="{{ project_data.live_version }}">{{ project_data.name }} <i class="fa-solid fa-up-right-from-square"></i></a>
+          } @else {
+            <div class="w-fit text-xl font-bold text-[#ff5722] underline-offset-2">{{ project_data.name }}</div>
+          }
 
           <div class="flex flex-row flex-wrap gap-2 mt-3 text-xs">
             @for (skill of project_data.skills; track $index) {

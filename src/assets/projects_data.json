@@ -115,6 +115,23 @@
       "hidden": false
     },
     {
+      "name": "Resume",
+      "images": [
+        "images/Resume/about-intro.png",
+        "images/Resume/about-education.png",
+        "images/Resume/about-skills.png",
+        "images/Resume/projects.png",
+        "images/Resume/contact.png",
+        "images/Resume/footer.png"
+      ],
+      "description": "My personal website. The one you are lookng at now.",
+      "live_version": "https://pasek108.github.io/Resume/",
+      "github_repo": "https://github.com/Pasek108/Resume",
+      "skills": [31, 39, 3, 2, 1, 0],
+      "group": 0,
+      "hidden": false
+    },
+    {
       "name": "UR-LoldleSolver",
       "images": [
         "images/UR-LoldleSolver/generator.png",
