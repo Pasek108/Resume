@@ -1,4 +1,4 @@
-<header class="relative z-50 flex h-20 w-full justify-center border-b border-[#717171 bg-no-repeat px-8 py-4 max-sm:p-4" style="background: radial-gradient(circle at 0, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.5) 100%) #212529">
+<header class="border-[#717171 relative z-50 flex h-20 w-full justify-center border-b bg-no-repeat px-8 py-4 max-sm:p-4" style="background: radial-gradient(circle at 0, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.5) 100%) #212529">
   <div class="flex items-center justify-between w-full max-w-screen-xl gap-16">
     <div class="-mt-[5px] flex flex-col">
       <div class="text-3xl font-bold text-[#ff5722]">Artur Pas</div>
@@ -32,9 +32,9 @@
   </div>
 </header>
 
-<div class="fixed left-0 top-20 z-10 h-[calc(100vh-5rem)] w-full bg-[#52525260]" [style.display]="!menu_hidden && screen_size < 640 ? null : 'none'"></div>
+<div class="fixed left-0 top-20 z-10 h-[calc(100svh-5rem)] w-full bg-[#52525260]" [style.display]="!menu_hidden && screen_size < 640 ? null : 'none'"></div>
 
-<main id="main-container" class="h-[calc(100vh-5rem)] w-full overflow-y-auto scroll-smooth" (scroll)="onScroll()" [@routeAnimations]="getRouteAnimationData()">
+<main id="main-container" class="h-[calc(100svh-5rem)] w-full overflow-y-auto scroll-smooth" (scroll)="onScroll()" [@routeAnimations]="getRouteAnimationData()">
   <div id="page-top"></div>
   <router-outlet></router-outlet>
 

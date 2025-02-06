@@ -16,8 +16,9 @@ import { SelectedProjectsComponent } from './selected-projects/selected-projects
   styleUrl: './about.component.css',
 })
 export class AboutComponent implements OnInit {
-  bg_x = 900;
-  bg_y = 50;
+  has_hover = !window.matchMedia('(any-hover: none)').matches;
+  bg_x = 0;
+  bg_y = 0;
   mouse_x = 0;
   mouse_y = 0;
   scroll_x = 0;
@@ -28,6 +29,8 @@ export class AboutComponent implements OnInit {
 
     const main_container = document?.querySelector('#main-container');
     main_container?.addEventListener('scroll', this.onScroll.bind(this));
+
+    window.addEventListener('resize', () => (this.has_hover = !window.matchMedia('(any-hover: none)').matches));
   }
 
   scrollToTop() {
@@ -36,6 +39,8 @@ export class AboutComponent implements OnInit {
   }
 
   onScroll() {
+    if (!this.has_hover) return;
+
     const main_container = document?.querySelector('#main-container');
     this.scroll_x = main_container?.scrollLeft || 0;
     this.scroll_y = main_container?.scrollTop || 0;
@@ -44,6 +49,8 @@ export class AboutComponent implements OnInit {
   }
 
   onMouseMove(evt: MouseEvent) {
+    if (!this.has_hover) return;
+
     this.mouse_x = evt.clientX;
     this.mouse_y = evt.clientY;
 
