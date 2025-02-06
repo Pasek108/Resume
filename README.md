@@ -1,59 +1,131 @@
-# Resume
+<h1 align="center">Resume - Readme</h1>
+<p align="center">
+  <strong>
+    My personal portfolio website written in Angular
+  </strong>
+</p>
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.7.
+<!-- 
+<div align="center">
+  <a href="https://www.ur.edu.pl/pl/kolegia/kolegium-nauk-przyrodniczych">
+    <img src="_for_readme/ur_banner.jpg?">
+  </a>
+</div>-->
 
-## Development server
+<br>
 
-To start a local development server, run:
+# Table of Contents
+* [Overview :sparkles:](#overview-sparkles)
+  * [About](#about)
+  * [Features](#features)
+  * [Technologies](#technologies)
+  * [Setup](#setup)
+  * [Acknowledgements](#acknowledgements)
+ 
+<!--
+* [Details :scroll:](#details-scroll)
+  * [User interface](#user-interface)
+  * [Project structure](#project-structure)
+  * [Code organization](#code-organization)
+-->
+<br>
 
-```bash
-ng serve
-```
+# Overview :sparkles:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## About
+My personal portfolio website written in Angular.
 
-## Code scaffolding
+Check out the [live version](https://pasek108.github.io/Resume/).
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+<br>
 
-```bash
-ng generate component component-name
-```
+![preview](/_for_readme/preview.png)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Technologies
+Languages:
+- JavaScript
+- TypeScript
+- CSS
+- HTML
 
-```bash
-ng generate --help
-```
+Libraries and frameworks:
+- [Angular](https://angular.dev) 19.0.0
+- [Tailwind CSS](https://tailwindcss.comangu) 3.4.17
+- [FontAwesome](https://fontawesome.com) 6.7.2
+- [GoogleFonts](https://fonts.google.com)
+  
+Programs:
+- [VSCode](https://code.visualstudio.com)
+- [ShareX](https://getsharex.com)
+- [GIMP](https://www.gimp.org)
 
-## Building
+## Features
+- a
 
-To build the project run:
+<br>
 
-```bash
-ng build
-```
+> [!NOTE]  
+> Room for improvements:
+> - a
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Setup
+- Use [live version](https://pasek108.github.io/Resume/).
 
-## Running unit tests
+- Download this repository and:
+  1. Open project in VSCode
+  2. Run `npm install`
+  3. Run `ng serve` or `ng serve --host <your-ip> --disable-host-check` for preview in local network
+  4. Open generated address in the browser
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- Deployment for GitHub:
+  1. Run `ng build --output-path docs --base-href /Resume/`
+  2. Move conetent from `/docs/browser` to `/docs`
+  3. In `main-XXX.js` and `styles-XXX.css` files replace all '/images' with 'images'
 
-```bash
-ng test
-```
+## Acknowledgements
+- [Animate on scroll](https://medium.com/@nemanjablagojevic/animate-elements-on-scroll-with-intersection-observer-in-angular-f91d98a92d13)
+- [Router fade animation](https://arminzia.com/blog/angular-router-fade-animation)
+- [SVG backgrounds and patterns](https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/)
+- [Favicon emoji](https://fav-gen.com/favicon-emoji) 
 
-## Running end-to-end tests
+<br>
 
-For end-to-end (e2e) testing, run:
+<!-- 
 
-```bash
-ng e2e
-```
+# Details :scroll:
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## User interface
 
-## Additional Resources
+### Header section
+![header section](/_for_readme/UI/header_section.png)
+Text
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Project structure
+- :file_folder: Befunge93Interpreter (project folder)
+  - :page_facing_up: *github and prepros config files*
+  - :page_facing_up: *github readme file*
+  - :page_facing_up: *index.html and favicon.ico files*
+  - :file_folder: _for_readme - :page_facing_up: *files for readme*
+  - :file_folder: js - :page_facing_up: *scripts used in the project*
+  - :file_folder: css
+    - :page_facing_up: *css files compiled by prepros*
+    - :file_folder: less - :page_facing_up: *less files*
+  - :file_folder: language
+    - :file_folder: en - :page_facing_up: *files for english language*
+    - :file_folder: pl - :page_facing_up: *files for polish language*
+  - :file_folder: nyan_cats
+    - :page_facing_up: *nyan cat icon*
+    - :file_folder: default - :page_facing_up: *files for default nyan cat*
+    - :file_folder: gameboy - :page_facing_up: *files for gameboy nyan cat*
+    - :file_folder: rasta - :page_facing_up: *files for rasta nyan cat*
+    - :file_folder: christmas - :page_facing_up: *files for christmas nyan cat*
+    - :file_folder: mexican - :page_facing_up: *files for mexican nyan cat*
+
+## Code organization
+
+![program diagram](/_for_readme/program_diagram.png)
+
+> [!WARNING]  
+> Classes must be loaded from bottom to the top to avoid situation when class does not exist in the time of its objects creation
+
+-->
