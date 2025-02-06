@@ -72,15 +72,15 @@ Programs:
 - Use [live version](https://pasek108.github.io/Resume/).
 
 - Download this repository and:
-  1. Open project in VSCode
-  2. Run `npm install`
-  3. Run `ng serve` or `ng serve --host <your-ip> --disable-host-check` for preview in local network
-  4. Open generated address in the browser
+  - Open project in VSCode
+  - Run `npm install`
+  - Run `ng serve` or `ng serve --host <your-ip> --disable-host-check` for preview in local network
+  - Open generated address in the browser
 
 - Deployment for GitHub:
-  1. Run `ng build --output-path docs --base-href /Resume/`
-  2. Move conetent from `/docs/browser` to `/docs`
-  3. In `main-XXX.js` and `styles-XXX.css` files replace all '/images' with 'images'
+  - Run `ng build --output-path docs --base-href /Resume/`
+  - Move conetent from `/docs/browser` to `/docs`
+  - In `main-XXX.js` and `styles-XXX.css` files replace all '/images' with 'images'
 
 ## Acknowledgements
 - [Animate on scroll](https://medium.com/@nemanjablagojevic/animate-elements-on-scroll-with-intersection-observer-in-angular-f91d98a92d13)
