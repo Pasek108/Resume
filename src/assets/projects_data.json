@@ -132,6 +132,67 @@
       "hidden": false
     },
     {
+      "name": "CSSBattle-Solutions",
+      "images": [
+        "images/CSSBattle-Solutions/solution-preview.png",
+        "images/CSSBattle-Solutions/challenge-select.png"
+      ],
+      "description": "My normal and minimal solutions for CSSBattle challenges.",
+      "live_version": "https://pasek108.github.io/CSSBattle-Solutions/",
+      "github_repo": "https://github.com/Pasek108/CSSBattle-Solutions",
+      "skills": [2, 1, 0],
+      "group": 4,
+      "hidden": false
+    },
+    {
+      "name": "ConnectGame",
+      "images": [
+        "images/ConnectGame/main-menu.png",
+        "images/ConnectGame/pipes.png",
+        "images/ConnectGame/bridges.png",
+        "images/ConnectGame/sliders.png",
+        "images/ConnectGame/squares.png",
+        "images/ConnectGame/editor.png"
+      ],
+      "description": "Small set of connections-based puzzle games about recreating right connections beetween objects.",
+      "live_version": "https://pasek108.github.io/ConnectGame/",
+      "github_repo": "https://github.com/Pasek108/ConnectGame",
+      "skills": [2, 41, 1, 0],
+      "group": 0,
+      "hidden": false
+    },
+    {
+      "name": "DeerKiller",
+      "images": [
+        "images/DeerKiller/game-hit.png",
+        "images/DeerKiller/main-menu.png",
+        "images/DeerKiller/top-score.png",
+        "images/DeerKiller/game.png",
+        "images/DeerKiller/game-over.png",
+        "images/DeerKiller/credits.png"
+      ],
+      "description": "Arcade racing game with the goal to get as many points as possible in one attempt by killing deers and avoiding cars.",
+      "live_version": "",
+      "github_repo": "https://github.com/Pasek108/DeerKiller",
+      "skills": [2, 1, 0, 9, 13],
+      "group": 0,
+      "hidden": false
+    },
+    {
+      "name": "Codewars-Solutions",
+      "images": [
+        "images/Codewars-Solutions/solution-preview.png",
+        "images/Codewars-Solutions/challenge-select.png"
+      ],
+      "description": "My solutions with descriptions for Codewars challenges.",
+      "live_version": "https://pasek108.github.io/Codewars-Solutions/",
+      "github_repo": "https://github.com/Pasek108/Codewars-Solutions",
+      "skills": [2, 1, 0, 4, 9, 5, 12, 11, 19, 3, 17],
+      "group": 4,
+      "hidden": false
+    },
+
+    {
       "name": "UR-LoldleSolver",
       "images": [
         "images/UR-LoldleSolver/generator.png",
