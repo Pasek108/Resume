@@ -191,7 +191,22 @@
       "group": 4,
       "hidden": false
     },
-
+    {
+      "name": "FM-MultiStepForm",
+      "images": [
+        "images/FM-MultiStepForm/step-1.png",
+        "images/FM-MultiStepForm/step-2.png",
+        "images/FM-MultiStepForm/step-3.png",
+        "images/FM-MultiStepForm/step-4.png",
+        "images/FM-MultiStepForm/step-5.png"
+      ],
+      "description": "My solution to the Frontend Mentor \"Multi-Step Form\" challenge.",
+      "live_version": "https://pasek108.github.io/FM-MultiStepForm/",
+      "github_repo": "https://github.com/Pasek108/FM-MultiStepForm",
+      "skills": [30, 3, 2, 1, 0],
+      "group": 2,
+      "hidden": false
+    },
     {
       "name": "UR-LoldleSolver",
       "images": [
@@ -215,6 +230,19 @@
       "github_repo": "https://github.com/Pasek108/PMA-BetterDesigner",
       "skills": [2, 1, 28, 0],
       "group": 4,
+      "hidden": false
+    },
+    {
+      "name": "FM-JobListingsWithFiltering",
+      "images": [
+        "images/FM-JobListingsWithFiltering/jobs-listing.png",
+        "images/FM-JobListingsWithFiltering/jobs-filtering.png"
+      ],
+      "description": "My solution to the Frontend Mentor \"Job listings with filtering\" challenge.",
+      "live_version": "https://pasek108.github.io/FM-JobListingsWithFiltering/",
+      "github_repo": "https://github.com/Pasek108/FM-JobListingsWithFiltering",
+      "skills": [31, 3, 2, 1, 0],
+      "group": 2,
       "hidden": false
     }
   ]

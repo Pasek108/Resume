@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-image-carousel',
-  imports: [NgClass, NgStyle, NgOptimizedImage, SlicePipe],
+  imports: [NgClass, NgStyle, NgOptimizedImage],
   templateUrl: './image-carousel.component.html',
   styleUrl: './image-carousel.component.css',
 })

@@ -19,7 +19,7 @@ export class ObserveVisibilityDirective implements OnDestroy, OnInit, AfterViewI
   // what percentage should be visible before triggering
   @Input() threshold: number = 0;
   // root margin
-  @Input() rootMargin: string = '-20% 0% -20% 0%';
+  @Input() rootMargin: string = '-10% 0% -10% 0%';
 
   // emit event when element enters intersects
   @Output() intersection = new EventEmitter<ElementRef>();
