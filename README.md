@@ -5,12 +5,9 @@
   </strong>
 </p>
 
-<!-- 
 <div align="center">
-  <a href="https://www.ur.edu.pl/pl/kolegia/kolegium-nauk-przyrodniczych">
-    <img src="_for_readme/ur_banner.jpg?">
-  </a>
-</div>-->
+  <img src="_for_readme/banner.png?">
+</div>
 
 <br>
 
