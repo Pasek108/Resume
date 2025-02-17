@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ObserveVisibilityDirective } from '../../../directives/visibility.directive';
+import { ObserveVisibilityDirective } from '../../../../directives/visibility.directive';
 
 @Component({
   selector: 'app-experience',

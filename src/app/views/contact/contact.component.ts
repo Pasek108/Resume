@@ -1,7 +1,7 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FooterComponent } from '../modules/footer/footer.component';
-import { ObserveVisibilityDirective } from '../../directives/visibility.directive';
+import { FooterComponent } from '../../modules/footer/footer.component';
+import { ObserveVisibilityDirective } from '../../../directives/visibility.directive';
 import { RouterModule } from '@angular/router';
 
 @Component({

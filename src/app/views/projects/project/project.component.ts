@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { Project } from '../../models/project';
+import { Project } from '../../../../models/project';
 import { ImageCarouselComponent } from '../image-carousel/image-carousel.component';
-import { ObserveVisibilityDirective } from '../../../directives/visibility.directive';
+import { ObserveVisibilityDirective } from '../../../../directives/visibility.directive';
 
 @Component({
   selector: 'app-project',

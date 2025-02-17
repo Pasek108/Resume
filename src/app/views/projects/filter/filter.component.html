@@ -1,0 +1,58 @@
+<div class="flex flex-grow-[9999] flex-col gap-4 max-lg:w-full">
+  <div class="flex flex-wrap w-full gap-2 lg:gap-4">
+    <div class="flex w-[calc(50%-0.5rem)] min-w-fit flex-grow items-center gap-2">
+      <label for="groups">Group:</label>
+      <select [(ngModel)]="search_group" id="groups" class="block w-fit flex-grow cursor-pointer rounded-md border border-gray-600 bg-gray-700 p-1.5 text-white placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500">
+        <option value="all" selected>All projects</option>
+        <option value="Personal projects">Personal projects</option>
+        <option value="TOP - The Odin Project">TOP - The Odin Project</option>
+        <option value="FM - Frontend Mentor">FM - Frontend Mentor</option>
+        <option value="UR - University of Rzeszów">UR - University of Rzeszów</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="relative flex w-[calc(50%-0.5rem)] min-w-fit flex-grow items-center max-md:w-full">
+      <i class="absolute text-sm fa-solid fa-magnifying-glass left-3"></i>
+      <input [(ngModel)]="search_text" type="text" class="w-full rounded-md border border-[#717171] bg-[#212529] p-1.5 px-6 pl-9" placeholder="Search text..." />
+    </div>
+  </div>
+
+  <div class="flex flex-wrap w-full gap-2 mt-1 -mb-1">
+    <div class="flex w-fit gap-1.5 border-r border-[#717171] pr-2">
+      Search
+      <select [(ngModel)]="skills_conjunction" id="skills" class="block w-fit cursor-pointer rounded-md border border-gray-600 bg-gray-700 p-0.5 pr-0.5 text-sm font-bold text-white placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500">
+        <option value="one" class="font-bold" selected>One</option>
+        <option value="all" class="font-bold">All</option>
+      </select>
+      of the skills
+    </div>
+
+    <button (click)="clearSkills()" class="flex cursor-pointer items-center justify-center gap-1.5 underline-offset-2 hover:text-[#ff5722]">
+      <i class="fa-solid fa-xmark -mb-0.5"></i>
+      Clear all
+    </button>
+  </div>
+
+  <div class="flex flex-wrap flex-shrink w-full gap-2">
+    @for (skill of search_skills; track $index) {
+      <div class="relative flex items-center p-1 px-3 pr-8 overflow-hidden text-xs font-bold uppercase rounded-md bg-slate-600 text-slate-100">
+        {{ skill }}
+        <i (click)="removeSkill(skill)" class="fa-solid fa-xmark absolute right-0 flex h-full w-6 cursor-pointer items-center justify-center bg-gray-700 text-sm hover:text-[#ff5722]"></i>
+      </div>
+    }
+
+    <select (input)="addSkill(skill.value)" (change)="skill.value = ''" #skill id="skill" class="rounded-md border border-[#717171] bg-[#212529] p-1 px-1.5 text-xs font-bold uppercase text-slate-100">
+      <option value="" class="text-sm uppercase" selected disabled>Add skill...</option>
+
+      @for (skill of filtered_skills; track $index) {
+        <option value="{{ skill }}" class="text-sm uppercase">{{ skill }}</option>
+      }
+    </select>
+  </div>
+</div>
+
+<div class="flex flex-grow gap-2 max-md:w-full max-sm:flex-col lg:flex-col">
+  <button (click)="applyFilter()" class="flex w-full cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-md border border-white p-1.5 px-6 font-bold text-white transition-colors duration-150 hover:bg-green-700">Show results</button>
+  <button (click)="resetFilter()" class="flex w-full cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-md border border-white p-1.5 px-6 font-bold text-white transition-colors duration-150 hover:bg-red-700">Reset</button>
+</div>

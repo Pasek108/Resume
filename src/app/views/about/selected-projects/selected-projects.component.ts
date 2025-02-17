@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { ObserveVisibilityDirective } from '../../../directives/visibility.directive';
-import { Project } from '../../models/project';
-import projects_data from '../../../assets/projects_data.json';
+import { ObserveVisibilityDirective } from '../../../../directives/visibility.directive';
+import { Project } from '../../../../models/project';
+import projects_data from '../../../../assets/projects_data.json';
 import { NgOptimizedImage } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
@@ -15,7 +15,7 @@ export class SelectedProjectsComponent {
   projects_data: Project[] = [];
 
   constructor() {
-    this.projects_data = projects_data.projects.slice(0, 4).map((project_data) => {
+    this.projects_data = projects_data.projects.slice(0, 6).map((project_data) => {
       let project: Project = {
         name: project_data.name,
         images: project_data.images,

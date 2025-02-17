@@ -1,11 +1,11 @@
 import { NgStyle } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FooterComponent } from '../modules/footer/footer.component';
+import { FooterComponent } from '../../modules/footer/footer.component';
 import { IntroComponent } from './intro/intro.component';
 import { SkillsComponent } from './skills/skills.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
-import { ObserveVisibilityDirective } from '../../directives/visibility.directive';
+import { ObserveVisibilityDirective } from '../../../directives/visibility.directive';
 import { WhatIDoComponent } from './what-i-do/what-i-do.component';
 import { SelectedProjectsComponent } from './selected-projects/selected-projects.component';
 

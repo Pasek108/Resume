@@ -1,0 +1,53 @@
+<div class="relative w-full overflow-hidden pb-[13vh]">
+  <div class="flex h-full min-h-72 w-full flex-col items-center justify-center border-b border-[#717171] bg-[#212529] bg-[radial-gradient(circle,rgba(0,0,0,0.1)_0,rgba(0,0,0,0.5)_100%)] bg-no-repeat p-8 text-[#ff5722] max-sm:p-4">
+    <h1 class="mb-0 font-bona text-7xl max-sm:text-5xl">Projects</h1>
+  </div>
+
+  <div class="flex flex-col items-center p-8 max-sm:p-4">
+    <div class="absolute -left-[5000%] top-0 -z-10 flex h-[999in] w-[9999%] items-center justify-center">
+      <svg width="150%" height="150%" xmlns="http://www.w3.org/2000/svg" class="-rotate-6">
+        <defs>
+          <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+            <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#717171" stroke-width="1" />
+          </pattern>
+        </defs>
+
+        <rect width="150%" height="150%" fill="url(#grid)" />
+      </svg>
+    </div>
+
+    <div id="projects-top" class="-mt-8 flex w-full max-w-[80rem] flex-col gap-8 py-8 max-sm:max-w-full">
+      <app-filter
+        class="mb-5 flex w-full gap-8 rounded-md border border-[#717171] bg-[#212529] p-4 shadow-[0px_1rem_2rem_0px_#4a474780] shadow-neutral-900 max-lg:flex-wrap"
+        [projects_data]="projects_data" [skills]="skills"
+        [filtered_projects]="filtered_projects"
+        [filtered_skills]="skills"
+        (onChange)="filterChanged($event)"
+      />
+
+      <app-pagination
+        class="relative flex items-center justify-between gap-6 -mb-2 max-[600px]:mt-8 max-[600px]:-mb-4"
+        [projects_count]="filtered_projects.length"
+        [page]="page" [page_size]="page_size"
+        [max_page]="max_page" [range]="range"
+        (onChange)="paginationChanged($event)"
+      />
+
+      @for (project_data of filtered_projects | slice: page * page_size : (page + 1) * page_size; track $index) {
+        @if (!project_data.hidden) { <app-project [project]="project_data" [id]="$index"></app-project> }
+      } @empty {
+        <div class="my-12 text-2xl text-center">No projects found. Try different filters.</div>
+      }
+
+      <app-pagination
+        class="relative flex items-center justify-between gap-6 -mb-2 mt-2 max-[600px]:mt-8 max-[600px]:-mb-6"
+        [projects_count]="filtered_projects.length"
+        [page]="page" [page_size]="page_size"
+        [max_page]="max_page" [range]="range"
+        (onChange)="paginationChanged($event)"
+      />
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
