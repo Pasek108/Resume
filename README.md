@@ -26,7 +26,7 @@
 # Overview :sparkles:
 
 ## About
-My personal portfolio website written in Angular.
+My personal portfolio website, built with Angular, includes detailed and well-organized information about me and my projects. Its responsive layout and animations make the presentation visually appealing.
 
 Check out the [live version](https://pasek108.github.io/Resume/).
 
@@ -106,8 +106,44 @@ Programs:
 
 ## User interface
 
-### Header section
-![header section](/_for_readme/UI/header_section.png)
-Text
+### Header
+![header](/_for_readme/UI/header.png)
+Each view share a navbar user can move around webiste by clicking on navbar names. On moblie navbar turns into collapsed menu. Header section with name of the view is placed at the top of the scrollable view. 
+
+### Footer
+![footer](/_for_readme/UI/footer.png)
+Footer is also part of every view. It is placed at the bottom of view. It has round, decorative shape and contains quote for making it less boring. It has contact links, copyright and author info.  
+
+### Intro
+![intro](/_for_readme/UI/intro.png)
+Intro is a first section of About view. It contains brief info about me, content of the about view, link to my PDF resume file and the most important links (github, codepen, linkedin).
+
+### What I Do
+![what i do](/_for_readme/UI/what-i-do.png)
+Intro is a first section of About view. It contains brief info about me, content of the about view, link to my PDF resume file and the most important links (github, codepen, linkedin).
+
+### Skills
+![skills](/_for_readme/UI/skills.png)
+Intro is a first section of About view. It contains brief info about me, content of the about view, link to my PDF resume file and the most important links (github, codepen, linkedin).
+
+### Selected projects
+![selected projects](/_for_readme/UI/selected-projects.png)
+Intro is a first section of About view. It contains brief info about me, content of the about view, link to my PDF resume file and the most important links (github, codepen, linkedin).
+
+### Education
+![education](/_for_readme/UI/education.png)
+Intro is a first section of About view. It contains brief info about me, content of the about view, link to my PDF resume file and the most important links (github, codepen, linkedin).
+
+### Experience
+![experience](/_for_readme/UI/experience.png)
+Intro is a first section of About view. It contains brief info about me, content of the about view, link to my PDF resume file and the most important links (github, codepen, linkedin).
+
+### Projects
+![projects](/_for_readme/UI/projects.png)
+Intro is a first section of About view. It contains brief info about me, content of the about view, link to my PDF resume file and the most important links (github, codepen, linkedin).
+
+### Contact
+![contact](/_for_readme/UI/contact.png)
+Intro is a first section of About view. It contains brief info about me, content of the about view, link to my PDF resume file and the most important links (github, codepen, linkedin).
 
 
