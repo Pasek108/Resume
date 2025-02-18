@@ -225,15 +225,6 @@ Each project entry includes:
     "JavaScript",
     "TypeScript",
     "Python",
-    "Java",
-    "C++",
-    "C#",
-    "C",
-    "PHP",
-    "Prolog",
-    "Haskell",
-    "SQL",
-    "MySQL",
     ... And more ...
   ],
   "projects": [
@@ -250,21 +241,6 @@ Each project entry includes:
       "live_version": "https://tic-tac-toe-alqu.onrender.com/",
       "github_repo": "https://github.com/Pasek108/TicTacToe",
       "skills": [2, 4, 42, 45, 34, 0],
-      "group": 0,
-      "hidden": false
-    },
-    {
-      "name": "GoblinSlayer",
-      "images": [
-        "images/GoblinSlayer/main-menu.png",
-        "images/GoblinSlayer/achievements.png",
-        "images/GoblinSlayer/game.png",
-        "images/GoblinSlayer/game-over.png"
-      ],
-      "description": "Arcade game where player have to survive increasing waves of goblins in one attempt.",
-      "live_version": "https://pasek108.github.io/GoblinSlayer/",
-      "github_repo": "https://github.com/Pasek108/GoblinSlayer",
-      "skills": [2, 42, 0],
       "group": 0,
       "hidden": false
     },
