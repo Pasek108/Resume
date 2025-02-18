@@ -18,13 +18,9 @@
   * [Technologies](#technologies)
   * [Setup](#setup)
   * [Acknowledgements](#acknowledgements)
- 
-<!--
 * [Details :scroll:](#details-scroll)
   * [User interface](#user-interface)
-  * [Project structure](#project-structure)
-  * [Code organization](#code-organization)
--->
+
 <br>
 
 # Overview :sparkles:
@@ -53,17 +49,36 @@ Libraries and frameworks:
   
 Programs:
 - [VSCode](https://code.visualstudio.com)
+- [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)
 - [ShareX](https://getsharex.com)
 - [GIMP](https://www.gimp.org)
 
 ## Features
-- a
+- Router and scroll animations
+- Responsive layout for all devices
+- Clear and detailed presentation
+- Properly linked websites and GitHub projects
+- Well-described GitHub projects
+- Downloadable PDF resume
+- Skills section
+- Selected projects section
+- Education and experience sections
+- Organized project data structure
+- Project filtering and pagination
+- Overview of all projects with images
+- Technologies used in projects
+- Live version and source code links for projects
+- Contact form
+- Social media and portfolio links
 
 <br>
 
 > [!NOTE]  
 > Room for improvements:
-> - a
+> - More projects
+> - Certificates
+> - Non formal education (cirriculums and courses without certificates)
+> - Details on used software
 
 ## Setup
 - Use [live version](https://pasek108.github.io/Resume/).
@@ -87,8 +102,6 @@ Programs:
 
 <br>
 
-<!-- 
-
 # Details :scroll:
 
 ## User interface
@@ -97,32 +110,4 @@ Programs:
 ![header section](/_for_readme/UI/header_section.png)
 Text
 
-## Project structure
-- :file_folder: Befunge93Interpreter (project folder)
-  - :page_facing_up: *github and prepros config files*
-  - :page_facing_up: *github readme file*
-  - :page_facing_up: *index.html and favicon.ico files*
-  - :file_folder: _for_readme - :page_facing_up: *files for readme*
-  - :file_folder: js - :page_facing_up: *scripts used in the project*
-  - :file_folder: css
-    - :page_facing_up: *css files compiled by prepros*
-    - :file_folder: less - :page_facing_up: *less files*
-  - :file_folder: language
-    - :file_folder: en - :page_facing_up: *files for english language*
-    - :file_folder: pl - :page_facing_up: *files for polish language*
-  - :file_folder: nyan_cats
-    - :page_facing_up: *nyan cat icon*
-    - :file_folder: default - :page_facing_up: *files for default nyan cat*
-    - :file_folder: gameboy - :page_facing_up: *files for gameboy nyan cat*
-    - :file_folder: rasta - :page_facing_up: *files for rasta nyan cat*
-    - :file_folder: christmas - :page_facing_up: *files for christmas nyan cat*
-    - :file_folder: mexican - :page_facing_up: *files for mexican nyan cat*
 
-## Code organization
-
-![program diagram](/_for_readme/program_diagram.png)
-
-> [!WARNING]  
-> Classes must be loaded from bottom to the top to avoid situation when class does not exist in the time of its objects creation
-
--->
