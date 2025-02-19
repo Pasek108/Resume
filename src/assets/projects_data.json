@@ -56,6 +56,40 @@
   ],
   "projects": [
     {
+      "name": "Resume",
+      "images": [
+        "images/Resume/about-intro.png",
+        "images/Resume/about-education.png",
+        "images/Resume/about-skills.png",
+        "images/Resume/projects.png",
+        "images/Resume/contact.png",
+        "images/Resume/footer.png"
+      ],
+      "description": "My personal website. The one you are lookng at now.",
+      "live_version": "https://pasek108.github.io/Resume/",
+      "github_repo": "https://github.com/Pasek108/Resume",
+      "skills": [31, 39, 3, 2, 1, 0],
+      "group": 0,
+      "hidden": false
+    },
+    {
+      "name": "FM-WhereInTheWorld",
+      "images": [
+        "images/FM-WhereInTheWorld/countries-overview.png",
+        "images/FM-WhereInTheWorld/country-details.png",
+        "images/FM-WhereInTheWorld/filter.png",
+        "images/FM-WhereInTheWorld/game-select.png",
+        "images/FM-WhereInTheWorld/wrong-answer.png",
+        "images/FM-WhereInTheWorld/game.png"
+      ],
+      "description": "My solution to the Frontend Mentor \"REST Countries API with color theme switcher\" challenge.",
+      "live_version": "https://pasek108.github.io/FM-WhereInTheWorld/",
+      "github_repo": "https://github.com/Pasek108/FM-WhereInTheWorld",
+      "skills": [2, 41, 0, 1],
+      "group": 2,
+      "hidden": false
+    },
+    {
       "name": "TicTacToe",
       "images": [
         "images/TicTacToe/main-menu.png",
@@ -115,23 +149,6 @@
       "hidden": false
     },
     {
-      "name": "Resume",
-      "images": [
-        "images/Resume/about-intro.png",
-        "images/Resume/about-education.png",
-        "images/Resume/about-skills.png",
-        "images/Resume/projects.png",
-        "images/Resume/contact.png",
-        "images/Resume/footer.png"
-      ],
-      "description": "My personal website. The one you are lookng at now.",
-      "live_version": "https://pasek108.github.io/Resume/",
-      "github_repo": "https://github.com/Pasek108/Resume",
-      "skills": [31, 39, 3, 2, 1, 0],
-      "group": 0,
-      "hidden": false
-    },
-    {
       "name": "CSSBattle-Solutions",
       "images": [
         "images/CSSBattle-Solutions/solution-preview.png",
@@ -159,23 +176,6 @@
       "github_repo": "https://github.com/Pasek108/ConnectGame",
       "skills": [2, 41, 1, 0],
       "group": 0,
-      "hidden": false
-    },
-    {
-      "name": "FM-WhereInTheWorld",
-      "images": [
-        "images/FM-WhereInTheWorld/countries-overview.png",
-        "images/FM-WhereInTheWorld/country-details.png",
-        "images/FM-WhereInTheWorld/filter.png",
-        "images/FM-WhereInTheWorld/game-select.png",
-        "images/FM-WhereInTheWorld/wrong-answer.png",
-        "images/FM-WhereInTheWorld/game.png"
-      ],
-      "description": "My solution to the Frontend Mentor \"REST Countries API with color theme switcher\" challenge.",
-      "live_version": "https://pasek108.github.io/FM-WhereInTheWorld/",
-      "github_repo": "https://github.com/Pasek108/FM-WhereInTheWorld",
-      "skills": [2, 41, 0, 1],
-      "group": 2,
       "hidden": false
     },
     {
