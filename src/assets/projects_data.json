@@ -67,7 +67,7 @@
       "description": "Three tic-tac-toe versions in two modes, vs AI, vs player locally and multiplayer in real-time.",
       "live_version": "https://tic-tac-toe-alqu.onrender.com/",
       "github_repo": "https://github.com/Pasek108/TicTacToe",
-      "skills": [2, 4, 42, 45, 34, 0],
+      "skills": [2, 4, 42, 45, 34, 1, 0],
       "group": 0,
       "hidden": false
     },
@@ -82,7 +82,7 @@
       "description": "Arcade game where player have to survive increasing waves of goblins in one attempt.",
       "live_version": "https://pasek108.github.io/GoblinSlayer/",
       "github_repo": "https://github.com/Pasek108/GoblinSlayer",
-      "skills": [2, 42, 0],
+      "skills": [2, 42, 0, 1],
       "group": 0,
       "hidden": false
     },
@@ -162,6 +162,23 @@
       "hidden": false
     },
     {
+      "name": "FM-WhereInTheWorld",
+      "images": [
+        "images/FM-WhereInTheWorld/countries-overview.png",
+        "images/FM-WhereInTheWorld/country-details.png",
+        "images/FM-WhereInTheWorld/filter.png",
+        "images/FM-WhereInTheWorld/game-select.png",
+        "images/FM-WhereInTheWorld/wrong-answer.png",
+        "images/FM-WhereInTheWorld/game.png"
+      ],
+      "description": "My solution to the Frontend Mentor \"REST Countries API with color theme switcher\" challenge.",
+      "live_version": "https://pasek108.github.io/FM-WhereInTheWorld/",
+      "github_repo": "https://github.com/Pasek108/FM-WhereInTheWorld",
+      "skills": [2, 41, 0, 1],
+      "group": 2,
+      "hidden": false
+    },
+    {
       "name": "DeerKiller",
       "images": [
         "images/DeerKiller/game-hit.png",
@@ -233,6 +250,18 @@
       "hidden": false
     },
     {
+      "name": "FM-LaunchCountdownTimer",
+      "images": [
+        "images/FM-LaunchCountdownTimer/countdown.png"
+      ],
+      "description": "My solution to the Frontend Mentor \"Launch countdown timer\" challenge.",
+      "live_version": "https://pasek108.github.io/FM-LaunchCountdownTimer/",
+      "github_repo": "https://github.com/Pasek108/FM-LaunchCountdownTimer",
+      "skills": [39, 2, 1, 0],
+      "group": 2,
+      "hidden": false
+    },
+    {
       "name": "FM-JobListingsWithFiltering",
       "images": [
         "images/FM-JobListingsWithFiltering/jobs-listing.png",
@@ -242,6 +271,73 @@
       "live_version": "https://pasek108.github.io/FM-JobListingsWithFiltering/",
       "github_repo": "https://github.com/Pasek108/FM-JobListingsWithFiltering",
       "skills": [31, 3, 2, 1, 0],
+      "group": 2,
+      "hidden": false
+    },
+    {
+      "name": "UR-Arduino",
+      "images": [],
+      "description": "Solutions to Arduino exercises from my studies at University of Rzeszów (UR).",
+      "live_version": "",
+      "github_repo": "https://github.com/Pasek108/UR-Arduino",
+      "skills": [40, 6],
+      "group": 3,
+      "hidden": false
+    },
+    {
+      "name": "UR-Haskell",
+      "images": [],
+      "description": "Solutions to Haskell exercises from my studies at University of Rzeszów (UR).",
+      "live_version": "",
+      "github_repo": "https://github.com/Pasek108/UR-Haskell",
+      "skills": [11],
+      "group": 3,
+      "hidden": false
+    },
+    {
+      "name": "UR-Prolog",
+      "images": [],
+      "description": "Solutions to Prolog exercises from my studies at University of Rzeszów (UR).",
+      "live_version": "",
+      "github_repo": "https://github.com/Pasek108/UR-Prolog",
+      "skills": [10],
+      "group": 3,
+      "hidden": false
+    },
+    {
+      "name": "FM-NotificationsPage",
+      "images": [
+        "images/FM-NotificationsPage/notifications.png"
+      ],
+      "description": "My solution to the Frontend Mentor \"Notifications page\" challenge.",
+      "live_version": "https://pasek108.github.io/FM-NotificationsPage/",
+      "github_repo": "https://github.com/Pasek108/FM-NotificationsPage",
+      "skills": [2, 41, 0, 1],
+      "group": 2,
+      "hidden": false
+    },
+    {
+      "name": "FM-ResultsSummaryComponent",
+      "images": [
+        "images/FM-ResultsSummaryComponent/summary.png"
+      ],
+      "description": "My solution to the Frontend Mentor \"Results summary component\" challenge.",
+      "live_version": "https://pasek108.github.io/FM-ResultsSummaryComponent/",
+      "github_repo": "https://github.com/Pasek108/FM-ResultsSummaryComponent",
+      "skills": [2, 1, 0],
+      "group": 2,
+      "hidden": false
+    },
+    {
+      "name": "FM-InteractiveRatingComponent",
+      "images": [
+        "images/FM-InteractiveRatingComponent/rating.png",
+        "images/FM-InteractiveRatingComponent/thank-you.png"
+      ],
+      "description": "My solution to the Frontend Mentor \"Interactive rating component\" challenge.",
+      "live_version": "https://pasek108.github.io/FM-InteractiveRatingComponent/",
+      "github_repo": "https://github.com/Pasek108/FM-InteractiveRatingComponent",
+      "skills": [31, 42, 3, 2, 1, 0],
       "group": 2,
       "hidden": false
     }
