@@ -33,7 +33,7 @@
         (onChange)="paginationChanged($event)"
       />
 
-      @for (project_data of filtered_projects | slice: page * page_size : (page + 1) * page_size; track $index) {
+      @for (project_data of filtered_projects | slice: page * page_size : (page + 1) * page_size; track project_data.name) {
         @if (!project_data.hidden) { <app-project [project]="project_data" [id]="$index"></app-project> }
       } @empty {
         <div class="my-12 text-2xl text-center">No projects found. Try different filters.</div>

@@ -98,7 +98,7 @@
         "images/TicTacToe/movable.png",
         "images/TicTacToe/one-mark.png"
       ],
-      "description": "Three tic-tac-toe versions in two modes, vs AI, vs player locally and multiplayer in real-time.",
+      "description": "Three tic-tac-toe versions in two modes. Playable vs vs AI, vs player locally and multiplayer in real-time.",
       "live_version": "https://tic-tac-toe-alqu.onrender.com/",
       "github_repo": "https://github.com/Pasek108/TicTacToe",
       "skills": [2, 4, 42, 45, 34, 1, 0],
