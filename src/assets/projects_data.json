@@ -111,7 +111,9 @@
         "images/GoblinSlayer/main-menu.png",
         "images/GoblinSlayer/achievements.png",
         "images/GoblinSlayer/game.png",
-        "images/GoblinSlayer/game-over.png"
+        "images/GoblinSlayer/game-over.png",
+        "images/GoblinSlayer/credits.png",
+        "images/GoblinSlayer/contact.png"
       ],
       "description": "Arcade game where player have to survive increasing waves of goblins in one attempt.",
       "live_version": "https://pasek108.github.io/GoblinSlayer/",
@@ -206,6 +208,21 @@
       "github_repo": "https://github.com/Pasek108/Codewars-Solutions",
       "skills": [2, 1, 0, 4, 9, 5, 12, 11, 19, 3, 17],
       "group": 4,
+      "hidden": false
+    },
+    {
+      "name": "FM-RockPaperScissors",
+      "images": [
+        "images/FM-RockPaperScissors/rock-paper-scissors.png",
+        "images/FM-RockPaperScissors/rock-paper-scissors-lizard-spock.png",
+        "images/FM-RockPaperScissors/winner.png",
+        "images/FM-RockPaperScissors/rules.png"
+      ],
+      "description": "My solution to the Frontend Mentor \"Rock, Paper, Scissors game\" challenge.",
+      "live_version": "https://pasek108.github.io/FM-RockPaperScissors/",
+      "github_repo": "https://github.com/Pasek108/FM-RockPaperScissors",
+      "skills": [2, 41, 1, 0],
+      "group": 2,
       "hidden": false
     },
     {
