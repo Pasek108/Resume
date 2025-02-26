@@ -52,7 +52,8 @@
     "SCSS",
     "SASS",
     "SPARQL",
-    "SocketIO"
+    "SocketIO",
+    "Java Swing"
   ],
   "projects": [
     {
@@ -173,7 +174,7 @@
         "images/ConnectGame/squares.png",
         "images/ConnectGame/editor.png"
       ],
-      "description": "Small set of connections-based puzzle games about recreating right connections beetween objects.",
+      "description": "A small set of connection-based puzzle games about recreating the correct connections between objects.",
       "live_version": "https://pasek108.github.io/ConnectGame/",
       "github_repo": "https://github.com/Pasek108/ConnectGame",
       "skills": [2, 41, 1, 0],
@@ -252,6 +253,18 @@
       "github_repo": "https://github.com/Pasek108/UR-LoldleSolver",
       "skills": [44, 2, 1, 0],
       "group": 3,
+      "hidden": false
+    },
+    {
+      "name": "Weather",
+      "images": [
+        "images/Weather/weather.png"
+      ],
+      "description": "Simple weather weather app with Pirate Weather API and Geonames API.",
+      "live_version": "https://pasek108.github.io/Weather/",
+      "github_repo": "https://github.com/Pasek108/Weather",
+      "skills": [29, 2, 1, 0],
+      "group": 0,
       "hidden": false
     },
     {
@@ -356,6 +369,18 @@
       "github_repo": "https://github.com/Pasek108/FM-InteractiveRatingComponent",
       "skills": [31, 42, 3, 2, 1, 0],
       "group": 2,
+      "hidden": false
+    },
+    {
+      "name": "TowerOfHanoi",
+      "images": [
+        "images/TowerOfHanoi/towers.png"
+      ],
+      "description": "Visualization of Tower of Hanoi algorithm.",
+      "live_version": "",
+      "github_repo": "https://github.com/Pasek108/TowerOfHanoi",
+      "skills": [46, 5],
+      "group": 0,
       "hidden": false
     }
   ]
