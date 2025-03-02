@@ -199,6 +199,18 @@
       "hidden": false
     },
     {
+      "name": "TOP-Rock-Paper-Scissors",
+      "images": [
+        "images/TOP-Rock-Paper-Scissors/frog_fight.png"
+      ],
+      "description": "My solution for The Odin Project \"Rock Paper Scissors\" project.",
+      "live_version": "https://pasek108.github.io/TOP-Rock-Paper-Scissors/",
+      "github_repo": "https://github.com/Pasek108/TOP-Rock-Paper-Scissors",
+      "skills": [2, 1, 0],
+      "group": 1,
+      "hidden": false
+    },
+    {
       "name": "Codewars-Solutions",
       "images": [
         "images/Codewars-Solutions/solution-preview.png",
