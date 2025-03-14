@@ -199,18 +199,6 @@
       "hidden": false
     },
     {
-      "name": "TOP-Rock-Paper-Scissors",
-      "images": [
-        "images/TOP-Rock-Paper-Scissors/frog_fight.png"
-      ],
-      "description": "My solution for The Odin Project \"Rock Paper Scissors\" project.",
-      "live_version": "https://pasek108.github.io/TOP-Rock-Paper-Scissors/",
-      "github_repo": "https://github.com/Pasek108/TOP-Rock-Paper-Scissors",
-      "skills": [2, 1, 0],
-      "group": 1,
-      "hidden": false
-    },
-    {
       "name": "Codewars-Solutions",
       "images": [
         "images/Codewars-Solutions/solution-preview.png",
@@ -280,6 +268,18 @@
       "hidden": false
     },
     {
+      "name": "TOP-Rock-Paper-Scissors",
+      "images": [
+        "images/TOP-Rock-Paper-Scissors/frog_fight.png"
+      ],
+      "description": "My solution for The Odin Project \"Rock Paper Scissors\" project.",
+      "live_version": "https://pasek108.github.io/TOP-Rock-Paper-Scissors/",
+      "github_repo": "https://github.com/Pasek108/TOP-Rock-Paper-Scissors",
+      "skills": [2, 1, 0],
+      "group": 1,
+      "hidden": false
+    },
+    {
       "name": "PMA-BetterDesigner",
       "images": [
         "images/PMA-BetterDesigner/designer.png"
@@ -314,6 +314,30 @@
       "github_repo": "https://github.com/Pasek108/FM-JobListingsWithFiltering",
       "skills": [31, 3, 2, 1, 0],
       "group": 2,
+      "hidden": false
+    },
+    {
+      "name": "TOP-Calculator",
+      "images": [
+        "images/TOP-Calculator/calculator.png"
+      ],
+      "description": "My solution for The Odin Project \"Calculator\" project.",
+      "live_version": "https://pasek108.github.io/TOP-Calculator/",
+      "github_repo": "https://github.com/Pasek108/TOP-Calculator",
+      "skills": [2, 1, 0],
+      "group": 1,
+      "hidden": false
+    },
+    {
+      "name": "TOP-Etch-A-Sketch",
+      "images": [
+        "images/TOP-Etch-A-Sketch/sketch.png"
+      ],
+      "description": "My solution for The Odin Project \"Etch-A-Sketch\" project.",
+      "live_version": "https://pasek108.github.io/TOP-Etch-A-Sketch/",
+      "github_repo": "https://github.com/Pasek108/TOP-Etch-A-Sketch",
+      "skills": [2, 1, 0],
+      "group": 1,
       "hidden": false
     },
     {
@@ -393,6 +417,40 @@
       "github_repo": "https://github.com/Pasek108/TowerOfHanoi",
       "skills": [46, 5],
       "group": 0,
+      "hidden": false
+    },
+    {
+      "name": "TOP-Landing-Page",
+      "images": [
+        "images/TOP-Landing-Page/landing-page.png"
+      ],
+      "description": "My solution for The Odin Project \"Landing Page\" project.",
+      "live_version": "https://pasek108.github.io/TOP-Landing-Page/",
+      "github_repo": "https://github.com/Pasek108/TOP-Landing-Page",
+      "skills": [1, 0],
+      "group": 1,
+      "hidden": false
+    },
+    {
+      "name": "TOP-Recipes",
+      "images": [
+        "images/TOP-Recipes/recipe.png"
+      ],
+      "description": "My solution for The Odin Project \"Recipes\" project.",
+      "live_version": "https://pasek108.github.io/TOP-Recipes/",
+      "github_repo": "https://github.com/Pasek108/TOP-Recipes",
+      "skills": [0],
+      "group": 1,
+      "hidden": false
+    },
+    {
+      "name": "TOP-Foundations",
+      "images": [],
+      "description": "Summary of my take on The Odin Project (TOP) foundations course",
+      "live_version": "https://pasek108.github.io/TOP-Foundations/",
+      "github_repo": "https://github.com/Pasek108/TOP-Foundations",
+      "skills": [2, 1, 0],
+      "group": 1,
       "hidden": false
     }
   ]
